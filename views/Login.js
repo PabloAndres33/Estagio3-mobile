@@ -1,40 +1,21 @@
 import React, {useState, useEffect} from 'react';
-import {KeyboardAvoidingView, Platform, TextInput,TouchableOpacity,Image, Text, View, Button} from 'react-native';
+import {KeyboardAvoidingView, Platform, TextInput,TouchableOpacity,Image, Text, View, Button, StyleSheet} from 'react-native';
 import {css} from '../assets/css/Css';
+import { signInWithEmailAndPassword} from 'firebase/auth';
+import { auth } from '../Fire';
 
 
 export default function Login({navigation}) {
 
-    const [display, setDisplay]=useState('none');
-    const [user, setUser]=useState('null');
-    const [password, setPassword]=useState('null');
-    const [login, setLogin]=useState('null');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    async function sendForm(){
-        let response = await fetch('http://192.168.67.78:3000/login', {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                email: user,
-                password: password
-            })
-        });
-
-        let json = await response.json();
-        console.log(json);
-        if(json === 'error'){
-            setDisplay('flex');
-            setTimeout(()=>{
-                setDisplay('none');
-            }, 5000);
-
-        }else{
+    async function createLogin() {
+        await signInWithEmailAndPassword(auth, email, password).then(value => {
+            console.log('Login efetuado com sucesso! \n' + value.user.uid);
             navigation.navigate('Principal');
-        }
-    }
+        }).catch(error => console.log(error));
+    };
 
     return (
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.container, css.darkbg]}>
@@ -42,14 +23,13 @@ export default function Login({navigation}) {
               <Image source={require('../assets/techlogo.png')}></Image>
             </View>
 
-            <View>
-                <Text style={css.login__msg(display)}>Usuário ou senha inválidos!</Text>
-            </View>
-
             <View style={css.login__form}>
-                <TextInput style={css.login__input} placeholder='Usuário' onChangeText={text=>setUser(text)}></TextInput>
-                <TextInput style={css.login__input} placeholder='Senha' onChangeText={text=>setPassword(text)} secureTextEntry={true}></TextInput>
-                <TouchableOpacity style={css.login__button} onPress={()=>sendForm()}>
+                <TextInput style={css.login__input} placeholder='Usuário'  value={email}
+                onChangeText={value => setEmail(value)}></TextInput>
+
+                <TextInput style={css.login__input} placeholder='Senha' value1={password}
+                onChangeText={value1 => setPassword(value1)} secureTextEntry={true}></TextInput>
+                <TouchableOpacity style={css.login__button} onPress={()=>createLogin()}>
                     <Text style={css.login__buttonText}>Entrar</Text>
                 </TouchableOpacity>
             </View>

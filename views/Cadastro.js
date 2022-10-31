@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import {KeyboardAvoidingView, Platform, TextInput,TouchableOpacity,Image, Text, View, Button, StyleSheet} from 'react-native';
 import {css} from '../assets/css/Css';
-import {createUserWithEmailAndPassword} from 'firebase/auth';
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
 import { auth } from '../Fire';
 
 
@@ -17,6 +17,7 @@ export default function Cadastro({navigation}) {
         }).catch(error => console.log(error));
     };
 
+
      //Envio do formulário
      /*async function sendForm()
      {
@@ -31,7 +32,6 @@ export default function Cadastro({navigation}) {
                 password: password
              })
          });
-
          let json = await response.json();
         console.log(json);
         if(json === 'error'){
@@ -39,7 +39,6 @@ export default function Cadastro({navigation}) {
             setTimeout(()=>{
                 setDisplay('none');
             }, 5000);
-
         }else{
             navigation.navigate('Principal');
         }
@@ -49,27 +48,17 @@ export default function Cadastro({navigation}) {
             <View style={css.login__logomarca}>
               <Image source={require('../assets/techlogo.png')}></Image>
             </View>
-            <View style={styles.container}>
-            <Text>Firebase App</Text>
-            <TextInput 
-                placeholder= "email"
-                placeholderTextColor= "#313131"
-                value={email}
-                onChangeText={value => setEmail(value)}
-                style={styles.input}
-            />
-            <TextInput 
-                placeholder= "senha"
-                placeholderTextColor= "#313131"
-                value1={password}
-                onChangeText={value1 => setPassword(value1)}
-                style={[styles.input, {marginBottom: 10}]}
-            />
-            <Button 
-                title="Cadastrar"
-                onPress={() => createUser()}
-            />
-        </View>
+
+            <View style={css.login__form}>
+                <TextInput style={css.login__input} placeholder='Usuário'  value={email}
+                onChangeText={value => setEmail(value)}></TextInput>
+
+                <TextInput style={css.login__input} placeholder='Senha' value1={password}
+                onChangeText={value1 => setPassword(value1)} secureTextEntry={true}></TextInput>
+                <TouchableOpacity style={css.login__button} onPress={()=>createUser()}>
+                    <Text style={css.login__buttonText}>Entrar</Text>
+                </TouchableOpacity>
+            </View>
         </KeyboardAvoidingView>
     );
 }
@@ -78,11 +67,12 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        marginTop: -35
     },
     input:{
        borderBottomWidth: 1,
-       borderBottomColor: '#313131',
+       borderBottomColor: 'white',
        marginTop: 5,
        width: '80%',
        height: 50 

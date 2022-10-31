@@ -21,7 +21,7 @@ export default function App() {
             }}/>
           <Stack.Screen name="Login" options={{headerShown:false}} component={Login} />
           <Stack.Screen name="Cadastro" options={{headerShown:false}} component={Cadastro} />
-          <Stack.Screen name="Principal" component={Principal} />
+          <Stack.Screen name="Principal" options={{headerShown:false}} component={Principal} />
         </Stack.Navigator>
       </NavigationContainer>
   );

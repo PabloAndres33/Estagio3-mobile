@@ -57,6 +57,7 @@ const css = StyleSheet.create({
         fontWeight:"bold",
         fontSize: 22,
         color:"#11385b"
-    }
+    },
+
 });
 export {css};
