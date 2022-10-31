@@ -4,10 +4,10 @@
     "slug": "tect",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/techlogo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splashtechphone2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

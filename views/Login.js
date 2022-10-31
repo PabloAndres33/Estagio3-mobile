@@ -14,7 +14,7 @@ export default function Login({navigation}) {
         await signInWithEmailAndPassword(auth, email, password).then(value => {
             console.log('Login efetuado com sucesso! \n' + value.user.uid);
             navigation.navigate('Principal');
-        }).catch(error => console.log(error));
+        }).catch(error => alert(error));
     };
 
     return (

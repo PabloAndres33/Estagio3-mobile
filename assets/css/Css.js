@@ -58,6 +58,12 @@ const css = StyleSheet.create({
         fontSize: 22,
         color:"#11385b"
     },
-
+    filtrar:{
+        maxWidth: 820,
+        padding: 12,
+        backgroundColor: "#8c52ff",
+        alignSelf:"center",
+        borderRadius:5
+    }
 });
 export {css};

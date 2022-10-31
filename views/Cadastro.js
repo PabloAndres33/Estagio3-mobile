@@ -14,7 +14,7 @@ export default function Cadastro({navigation}) {
         await createUserWithEmailAndPassword(auth, email, password).then(value => {
             console.log('cadastrado com sucesso! \n' + value.user.uid);
             navigation.navigate('Principal');
-        }).catch(error => console.log(error));
+        }).catch(error => alert(error));
     };
 
 
@@ -56,7 +56,7 @@ export default function Cadastro({navigation}) {
                 <TextInput style={css.login__input} placeholder='Senha' value1={password}
                 onChangeText={value1 => setPassword(value1)} secureTextEntry={true}></TextInput>
                 <TouchableOpacity style={css.login__button} onPress={()=>createUser()}>
-                    <Text style={css.login__buttonText}>Entrar</Text>
+                    <Text style={css.login__buttonText}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>
         </KeyboardAvoidingView>
