@@ -24,7 +24,8 @@ export default function App() {
           <Stack.Screen name="Principal" options={{headerShown:false}} component={Principal} />
           <Stack.Screen name="Noticia1" options={{headerShown:true}} component={Noticia1} />
           <Stack.Screen name="Noticia2" options={{headerShown:true}} component={Noticia2} />
-          <Stack.Screen name="Filtrar" options={{headerShown:true}} component={Filtrar} />
+          <Stack.Screen name="Filtrar" options={{headerShown:true,
+            headerStyle:{backgroundColor:"#8c52ff"}}} component={Filtrar} />
         </Stack.Navigator>
       </NavigationContainer>
   );

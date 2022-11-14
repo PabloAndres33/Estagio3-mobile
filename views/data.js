@@ -1,14 +1,14 @@
 const data = [
-    { id: 1, name: 'Iphone 2G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD" },//
-    { id: 2, name: 'iPhone 3G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD" },//
-    { id: 3, name: 'iPhone 3G S', armazenamento: "32GB", ram: '256MB', processador: "ARM Cortex A8", tela: "TFT LCD" },//
-    { id: 4, name: 'iPhone 4', armazenamento: "32GB", ram: '512MB', processador: "ARM Apple A4", tela: "TFT LCD" },//
-    { id: 5, name: 'iPhone 4S', armazenamento: "64GB", ram: '512MB', processador: "Apple A5", tela: "IPS LCD" },//
-    { id: 6, name: 'iPhone 5', armazenamento: "64GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD" },//
-    { id: 7, name: 'iPhone 5S', armazenamento: "64GB", ram: '1GB', processador: "Cyclone Apple A7", tela: "IPS LCD" },//
-    { id: 8, name: 'iPhone 5C', armazenamento: "8GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD" },//
-    { id: 9, name: 'iPhone 6', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD" },//
-    { id: 10, name: 'iPhone 6 Plus', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD" },//
+    { id: 1, name: 'Iphone 2G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83377?w=160&h=304', spec:'16GB+128MB+ARM 11+TFT LCD' },//
+    { id: 2, name: 'iPhone 3G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD" , avatar: 'https://t2.tudocdn.net/83379?w=160&h=296'},//
+    { id: 3, name: 'iPhone 3G S', armazenamento: "32GB", ram: '256MB', processador: "ARM Cortex A8", tela: "TFT LCD" , avatar: 'https://t2.tudocdn.net/83378?w=160&h=296'},//
+    { id: 4, name: 'iPhone 4', armazenamento: "32GB", ram: '512MB', processador: "ARM Apple A4", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83380?w=156&h=304' },//
+    { id: 5, name: 'iPhone 4S', armazenamento: "64GB", ram: '512MB', processador: "Apple A5", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
+    { id: 6, name: 'iPhone 5', armazenamento: "64GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
+    { id: 7, name: 'iPhone 5S', armazenamento: "64GB", ram: '1GB', processador: "Cyclone Apple A7", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
+    { id: 8, name: 'iPhone 5C', armazenamento: "8GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
+    { id: 9, name: 'iPhone 6', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
+    { id: 10, name: 'iPhone 6 Plus', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
     { id: 11, name: 'iPhone 6S', armazenamento: "128GB", ram: '2GB', processador: "Apple A9", tela: "IPS LCD" },//
     { id: 12, name: 'iPhone 6S Plus', armazenamento: "128GB", ram: '2GB', processador: "Apple A9", tela: "IPS LCD" },//
     { id: 13, name: 'iPhone SE 2016', armazenamento: "64GB", ram: '2GB', processador: "Twister Apple A9", tela: "IPS LCD" },//
