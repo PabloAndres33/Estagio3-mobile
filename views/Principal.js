@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import {Text, View, Button, Image, FlatList, ScrollView, Dimensions, StyleSheet, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
+import {Text, View, Image, FlatList, ScrollView, Dimensions, StyleSheet, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
 import { css } from '../assets/css/Css';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 
 const {width} = Dimensions.get("window");
@@ -14,7 +15,7 @@ const images = [
 ];
 
 export default function Principal({navigation}){
-
+    const Tab = createMaterialBottomTabNavigator();
     return (
         <View style={[style.container, css.darkbg]}>
             <ScrollView 
@@ -48,6 +49,7 @@ export default function Principal({navigation}){
                 </TouchableOpacity>
             </ScrollView>
        </View>
+        
        
     );
 }

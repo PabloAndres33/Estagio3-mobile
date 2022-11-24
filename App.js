@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Home, Login, Cadastro, Principal, Filtrar, Noticia1, Noticia2} from './views';
+import {Home, Login, Cadastro, Principal,Pesquisa, Filtrar, Noticia1, Noticia2} from './views';
 import {Test} from './views';
 
 
@@ -27,6 +27,9 @@ export default function App() {
           <Stack.Screen name="Filtrar" options={{headerShown:true,
             headerStyle:{backgroundColor:"#8c52ff"}}} component={Filtrar} />
         </Stack.Navigator>
+
+
+
       </NavigationContainer>
   );
 }

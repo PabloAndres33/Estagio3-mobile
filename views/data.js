@@ -1,222 +1,222 @@
 const data = [
-    { id: 1, name: 'Iphone 2G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83377?w=160&h=304', spec:'16GB+128MB+ARM 11+TFT LCD' },//
-    { id: 2, name: 'iPhone 3G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD" , avatar: 'https://t2.tudocdn.net/83379?w=160&h=296'},//
-    { id: 3, name: 'iPhone 3G S', armazenamento: "32GB", ram: '256MB', processador: "ARM Cortex A8", tela: "TFT LCD" , avatar: 'https://t2.tudocdn.net/83378?w=160&h=296'},//
-    { id: 4, name: 'iPhone 4', armazenamento: "32GB", ram: '512MB', processador: "ARM Apple A4", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83380?w=156&h=304' },//
-    { id: 5, name: 'iPhone 4S', armazenamento: "64GB", ram: '512MB', processador: "Apple A5", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
-    { id: 6, name: 'iPhone 5', armazenamento: "64GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
-    { id: 7, name: 'iPhone 5S', armazenamento: "64GB", ram: '1GB', processador: "Cyclone Apple A7", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
-    { id: 8, name: 'iPhone 5C', armazenamento: "8GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
-    { id: 9, name: 'iPhone 6', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
-    { id: 10, name: 'iPhone 6 Plus', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83379?w=160&h=296' },//
-    { id: 11, name: 'iPhone 6S', armazenamento: "128GB", ram: '2GB', processador: "Apple A9", tela: "IPS LCD" },//
-    { id: 12, name: 'iPhone 6S Plus', armazenamento: "128GB", ram: '2GB', processador: "Apple A9", tela: "IPS LCD" },//
-    { id: 13, name: 'iPhone SE 2016', armazenamento: "64GB", ram: '2GB', processador: "Twister Apple A9", tela: "IPS LCD" },//
-    { id: 14, name: 'iPhone 7', armazenamento: "256GB", ram: '2GB', processador: "Apple A10 Fusion", tela: "IPS LCD" },//
-    { id: 15, name: 'iPhone 7 Plus', armazenamento: "32GB", ram: '3GB', processador: "Quad Core Apple A10 Fusion", tela: "IPS LCD" },//
-    { id: 16, name: 'iPhone 8', armazenamento: "256GB", ram: '2GB', processador: "Apple A11 Bionic", tela: "IPS LCD" },//
-    { id: 17, name: 'iPhone 8 Plus', armazenamento: "256GB", ram: '3GB', processador: "Apple A11 Bionic", tela: "IPS LCD" },//
-    { id: 19, name: 'iPhone X', armazenamento: "256GB", ram: '3GB', processador: "Apple A11 Bionic", tela: "OLED" },//
-    { id: 20, name: 'iPhone XS', armazenamento: "512GB", ram: '4GB', processador: "Apple A12 Bionic", tela: "OLED" },//
-    { id: 21, name: 'iPhone XR', armazenamento: "256GB", ram: '3GB', processador: "Apple A12 Bionic", tela: "IPS LCD" },//
-    { id: 22, name: 'iPhone XS Max', armazenamento: "512GB", ram: '4GB', processador: "Apple A12 Bionic", tela: "OLED" },//
-    { id: 23, name: 'iPhone 11', armazenamento: "512GB", ram: '4GB', processador: "Apple A13 Bionic", tela: "LCD" },//
-    { id: 24, name: 'iPhone 11 Pro', armazenamento: "512GB", ram: '4GB', processador: "Apple A13 Bionic", tela: "OLED" },//
-    { id: 25, name: 'iPhone 11 Pro Max', armazenamento: "512GB", ram: '4GB', processador: "Apple A13 Bionic", tela: "OLED" },//
-    { id: 26, name: 'iPhone SE 2020', armazenamento: "256GB", ram: '3GB', processador: "Apple A13 Bionic", tela: "IPS LCD" },//
-    { id: 27, name: 'iPhone 12 Mini', armazenamento: "256GB", ram: '4GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 28, name: 'iPhone 12', armazenamento: "256GB", ram: '4GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 29, name: 'iPhone 12 Pro', armazenamento: "512GB", ram: '6GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 30, name: 'iPhone 12 Pro Max', armazenamento: "512GB", ram: '6GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 31, name: 'iPhone 13 Mini', armazenamento: "512GB", ram: '4GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 32, name: 'iPhone 13', armazenamento: "512GB", ram: '4GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 33, name: 'iPhone 13 Pro', armazenamento: "1000GB", ram: '6GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 34, name: 'iPhone 13 Pro Max', armazenamento: "1000GB", ram: '6GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED" },//
-    { id: 35, name: 'iPhone SE', armazenamento: "256GB", ram: '3GB', processador: "Apple A15 Bionic", tela: "Retina IPS LCD" },//
-    { id: 36, name: 'Samsung Galaxy S', armazenamento: "16GB", ram: '512MB', processador: "Cortex A8 ARM Hummingbird", tela: "Super AMOLED" },//
+    { id: 1, name: 'Iphone 2G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83377?w=160&h=304', spec:"16GB+128MB+ARM 11+TFT LCD" },//
+    { id: 2, name: 'iPhone 3G', armazenamento: "16GB", ram: '128MB', processador: "ARM 11", tela: "TFT LCD" , avatar: 'https://t2.tudocdn.net/83379?w=160&h=296', spec:'16GB+128MB+ARM 11+TFT LCD'},//
+    { id: 3, name: 'iPhone 3G S', armazenamento: "32GB", ram: '256MB', processador: "ARM Cortex A8", tela: "TFT LCD" , avatar: 'https://t2.tudocdn.net/83378?w=160&h=296', spec:'32GB+256MB+ARM Cortex A8+TFT LCD'},//
+    { id: 4, name: 'iPhone 4', armazenamento: "32GB", ram: '512MB', processador: "ARM Apple A4", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83380?w=156&h=304', spec:'32GB+512MB+ARM Apple A4+TFT LCD' },//
+    { id: 5, name: 'iPhone 4S', armazenamento: "64GB", ram: '512MB', processador: "Apple A5", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83381?w=155&h=304' , spec:'64GB+512MB+Apple A5+IPS LCD'},//
+    { id: 6, name: 'iPhone 5', armazenamento: "64GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83382?w=144&h=304', spec:'64GB+1GB+Apple A6+IPS LCD' },//
+    { id: 7, name: 'iPhone 5S', armazenamento: "64GB", ram: '1GB', processador: "Cyclone Apple A7", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83384?w=144&h=304', spec:'64GB+1GB+Cyclone Apple A7+IPS LCD' },//
+    { id: 8, name: 'iPhone 5C', armazenamento: "8GB", ram: '1GB', processador: "Apple A6", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/83383?w=145&h=304', spec:'8GB+1GB+Apple A6+IPS LCD' },//
+    { id: 9, name: 'iPhone 6', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/97034?w=147&h=304', spec:'128GB+1GB+Apple A8+IPS LCD' },//
+    { id: 10, name: 'iPhone 6 Plus', armazenamento: "128GB", ram: '1GB', processador: "Apple A8", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/97026?w=149&h=304', spec:'128GB+1GB+Apple A8+IPS LCD' },//
+    { id: 11, name: 'iPhone 6S', armazenamento: "128GB", ram: '2GB', processador: "Apple A9", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/143323?w=149&h=304', spec:'128GB+2GB+Apple A9+IPS LCD'  },//
+    { id: 12, name: 'iPhone 6S Plus', armazenamento: "128GB", ram: '2GB', processador: "Apple A9", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/143324?w=149&h=304', spec:'128GB+2GB+Apple A9+IPS LCD'  },//
+    { id: 13, name: 'iPhone SE 2016', armazenamento: "64GB", ram: '2GB', processador: "Twister Apple A9", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/163491?w=145&h=304', spec:'64GB+2GB+Twister Apple A9+IPS LCD'  },//
+    { id: 14, name: 'iPhone 7', armazenamento: "256GB", ram: '2GB', processador: "Apple A10 Fusion", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/192405?w=149&h=304', spec:'256GB+2GB+Apple A10 Fusion+IPS LCD'  },//
+    { id: 15, name: 'iPhone 7 Plus', armazenamento: "32GB", ram: '3GB', processador: "Quad Core Apple A10 Fusion", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/192402?w=149&h=304', spec:'32GB+3GB+Quad Core Apple A10 Fusion+IPS LCD'  },//
+    { id: 16, name: 'iPhone 8', armazenamento: "256GB", ram: '2GB', processador: "Apple A11 Bionic", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/521363?w=148&h=304', spec:'256GB+2GB+Apple A11 Bionic+IPS LCD'  },//
+    { id: 17, name: 'iPhone 8 Plus', armazenamento: "256GB", ram: '3GB', processador: "Apple A11 Bionic", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/287927?w=150&h=304', spec:'256GB+3GB+Apple A11 Bionic+IPS LCD'  },//
+    { id: 19, name: 'iPhone X', armazenamento: "256GB", ram: '3GB', processador: "Apple A11 Bionic", tela: "OLED", avatar: 'https://t2.tudocdn.net/287931?w=152&h=304', spec:'256GB+3GB+Apple A11 Bionic+IPS LCD'  },//
+    { id: 20, name: 'iPhone XS', armazenamento: "512GB", ram: '4GB', processador: "Apple A12 Bionic", tela: "OLED", avatar: 'https://t2.tudocdn.net/360569?w=150&h=304', spec:'512GB+4GB+Apple A12 Bionic+OLED'  },//
+    { id: 21, name: 'iPhone XR', armazenamento: "256GB", ram: '3GB', processador: "Apple A12 Bionic", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/360574?w=152&h=304', spec:'256GB+3GB+Apple A12 Bionic+IPS LCD' },//
+    { id: 22, name: 'iPhone XS Max', armazenamento: "512GB", ram: '4GB', processador: "Apple A12 Bionic", tela: "OLED", avatar: 'https://t2.tudocdn.net/360572?w=150&h=304', spec:'512GB+4GB+Apple A12 Bionic+OLED' },//
+    { id: 23, name: 'iPhone 11', armazenamento: "512GB", ram: '4GB', processador: "Apple A13 Bionic", tela: "LCD", avatar: 'https://t2.tudocdn.net/492959?w=152&h=304', spec:'512GB+4GB+Apple A13 Bionic+LCD' },//
+    { id: 24, name: 'iPhone 11 Pro', armazenamento: "512GB", ram: '4GB', processador: "Apple A13 Bionic", tela: "OLED", avatar: 'https://t2.tudocdn.net/492981?w=151&h=304', spec:'512GB+4GB+Apple A13 Bionic+OLED' },//
+    { id: 25, name: 'iPhone 11 Pro Max', armazenamento: "512GB", ram: '4GB', processador: "Apple A13 Bionic", tela: "OLED", avatar: 'https://t2.tudocdn.net/492981?w=151&h=304', spec:'512GB+4GB+Apple A13 Bionic+OLED' },//
+    { id: 26, name: 'iPhone SE 2020', armazenamento: "256GB", ram: '3GB', processador: "Apple A13 Bionic", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/521362?w=148&h=304', spec:'256GB+3GB+Apple A13 Bionic+IPS LCD' },//
+    { id: 27, name: 'iPhone 12 Mini', armazenamento: "256GB", ram: '4GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/590836?w=148&h=304', spec:'256GB+4GB+Apple A14 Bionic+Super Retina XDR OLED' },//
+    { id: 28, name: 'iPhone 12', armazenamento: "256GB", ram: '4GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/590830?w=148&h=304', spec:'256GB+4GB+Apple A14 Bionic+Super Retina XDR OLED' },//
+    { id: 29, name: 'iPhone 12 Pro', armazenamento: "512GB", ram: '6GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/547807?w=148&h=304', spec:'512GB+6GB+Apple A14 Bionic+Super Retina XDR OLED' },//
+    { id: 30, name: 'iPhone 12 Pro Max', armazenamento: "512GB", ram: '6GB', processador: "Apple A14 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/547808?w=148&h=304', spec:'512GB+6GB+Apple A14 Bionic+Super Retina XDR OLED' },//
+    { id: 31, name: 'iPhone 13 Mini', armazenamento: "512GB", ram: '4GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/590580?w=148&h=304', spec:'512GB+4GB+Apple A15 Bionic+Super Retina XDR OLED' },//
+    { id: 32, name: 'iPhone 13', armazenamento: "512GB", ram: '4GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/590579?w=148&h=304', spec:'512GB+4GB+Apple A15 Bionic+Super Retina XDR OLED' },//
+    { id: 33, name: 'iPhone 13 Pro', armazenamento: "1000GB", ram: '6GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/590583?w=148&h=304', spec:'1000GB+6GB+Apple A15 Bionic+Super Retina XDR OLED' },//
+    { id: 34, name: 'iPhone 13 Pro Max', armazenamento: "1000GB", ram: '6GB', processador: "Apple A15 Bionic", tela: "Super Retina XDR OLED", avatar: 'https://t2.tudocdn.net/590584?w=148&h=304', spec:'1000GB+6GB+Apple A15 Bionic+Super Retina XDR OLED' },//
+    { id: 35, name: 'iPhone SE', armazenamento: "256GB", ram: '3GB', processador: "Apple A15 Bionic", tela: "Retina IPS LCD", avatar: 'https://t2.tudocdn.net/614634?w=148&h=304', spec:'256GB+3GB+Apple A15 Bionic+Retina IPS LCD' },//
+    { id: 36, name: 'Samsung Galaxy S', armazenamento: "16GB", ram: '512MB', processador: "Cortex A8 ARM Hummingbird", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/46482_4?w=100&h=200', spec:'16GB+512MB+Cortex A8 ARM Hummingbird+Super AMOLED' },//
     //{ id: 37, name: 'Samsung Galaxy Beam I8520', armazenamento: "384MB", ram: '384MB', processador: "720 MHz", tela: "Super AMOLED" },
-    { id: 38, name: 'Samsung Galaxy S2', armazenamento: "16GB", ram: '1GB', processador: "ARM Cortex A9", tela: "Super AMOLED Plus" },//
-    { id: 39, name: 'Samsung i9003 Galaxy SL', armazenamento: "16GB", ram: '478MB', processador: "Cortex A8", tela: "Super Clear LCD" },//
-    { id: 40, name: 'Samsung Galaxy Z', armazenamento: "8GB", ram: '1GB', processador: "NVDIA Tegra 2 AP20H Dual Core", tela: "Super Clear LCD" },//
-    { id: 41, name: 'Samsung Nexus S', armazenamento: "16GB", ram: '512MB', processador: "Cortex A8 SAMSUNG Hummingbird", tela: "Super AMOLED" },//
-    { id: 42, name: 'Samsung Galaxy S2 LTE', armazenamento: "16GB", ram: '1GB', processador: "SAMSUNG", tela: "Super AMOLED Plus" },//
-    { id: 43, name: 'Samsung Galaxy Y', armazenamento: "160MB", ram: '290MB', processador: "Broadcom BCM21553", tela: "TFT LCD" },//
-    { id: 44, name: 'Samsung Galaxy Nexus', armazenamento: "16GB", ram: '1GB', processador: "Cortex-A9 Texas Instruments OMAP 4460", tela: "Super AMOLED" },//
-    { id: 45, name: 'Samsung Galaxy Y Duos', armazenamento: "512MB", ram: '290MB', processador: "Broadcom BCM21553", tela: "TFT LCD" },//
+    { id: 38, name: 'Samsung Galaxy S2', armazenamento: "16GB", ram: '1GB', processador: "ARM Cortex A9", tela: "Super AMOLED Plus", avatar: 'https://t2.tudocdn.net/83724?w=160&h=298', spec:'16GB+1GB+ARM Cortex A9+Super AMOLED Plus' },//
+    { id: 39, name: 'Samsung i9003 Galaxy SL', armazenamento: "16GB", ram: '478MB', processador: "Cortex A8", tela: "Super Clear LCD", avatar: 'https://t2.tudocdn.net/50369_4?w=100&h=200', spec:'16GB+478MB+Cortex A8+Super Clear LCD' },//
+    { id: 40, name: 'Samsung Galaxy Z', armazenamento: "8GB", ram: '1GB', processador: "NVDIA Tegra 2 AP20H Dual Core", tela: "Super Clear LCD", avatar: '   ', spec:'8GB+1GB+NVDIA Tegra 2 AP20H Dual Core+Super Clear LCD' },//
+    { id: 41, name: 'Samsung Nexus S', armazenamento: "16GB", ram: '512MB', processador: "Cortex A8 SAMSUNG Hummingbird", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83716?w=156&h=304', spec:'16GB+512MB+Cortex A8 SAMSUNG Hummingbird+Super AMOLED' },//
+    { id: 42, name: 'Samsung Galaxy S2 LTE', armazenamento: "16GB", ram: '1GB', processador: "SAMSUNG", tela: "Super AMOLED Plus", avatar: 'https://t2.tudocdn.net/365815?w=160&h=302', spec:'16GB+1GB+SAMSUNG+Super AMOLED Plus' },//
+    { id: 43, name: 'Samsung Galaxy Y', armazenamento: "160MB", ram: '290MB', processador: "Broadcom BCM21553", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/129149?w=160&h=285', spec:'160MB+290MB+Broadcom BCM21553+TFT LCD' },//
+    { id: 44, name: 'Samsung Galaxy Nexus', armazenamento: "16GB", ram: '1GB', processador: "Cortex-A9 Texas Instruments OMAP 4460", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83674?w=156&h=304', spec:'16GB+1GB+Cortex-A9 Texas Instruments OMAP 4460+Super AMOLED' },//
+    { id: 45, name: 'Samsung Galaxy Y Duos', armazenamento: "512MB", ram: '290MB', processador: "Broadcom BCM21553", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/186204?w=160&h=291', spec:'512MB+290MB+Broadcom BCM21553+TFT LCD' },//
     //{ id: 46, name: 'Samsung Galaxy Ace Plus', armazenamento: "3GB", ram: '512MB', processador: "Adreno 200", tela: "TFT LCD" },
-    { id: 47, name: 'Samsung Galaxy W', armazenamento: "2GB", ram: '512MB', processador: "Snapdragon Qualcomm MSM8255T", tela: "TFT LCD" },//
-    { id: 48, name: 'Samsung Galaxy Ace 2', armazenamento: "4GB", ram: '768MB', processador: "SAMSUNG", tela: "PLS LCD" },//
-    { id: 49, name: 'Samsung Galaxy mini 2', armazenamento: "4GB", ram: '512MB', processador: "Qualcomm MSM7227", tela: "TFT LCD" },//
-    { id: 50, name: 'Samsung Galaxy Beam I8530', armazenamento: "8GB", ram: '768MB', processador: "ARM Cortex A9", tela: "TFT LCD" },//
-    { id: 51, name: 'Samsung Galaxy S3', armazenamento: "16GB", ram: '1GB', processador: "SAMSUNG Exynos 4412", tela: "Super AMOLED" },//
-    { id: 52, name: 'Samsung Galaxy S2 Lite', armazenamento: "8GB", ram: '768MB', processador: "SAMSUNG", tela: "Super AMOLED" },//
-    { id: 53, name: 'Samsung Galaxy S Duos S7562', armazenamento: "4GB", ram: '768MB', processador: "Snapdragon Qualcomm MSM7227A", tela: "TFT LCD" },//
-    { id: 54, name: 'Samsung Galaxy Note 2', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A9 SAMSUNG Exynos 4412", tela: "Super AMOLED" },//
-    { id: 55, name: 'Samsung Galaxy X', armazenamento: "16GB", ram: '1GB', processador: "Texas Instruments OMAP4460", tela: "Super AMOLED" },//
-    { id: 56, name: 'Samsung Galaxy Music', armazenamento: "4GB", ram: '512MB', processador: "A9", tela: "TFT LCD" },//
-    { id: 57, name: 'Samsung Galaxy Music Duos', armazenamento: "4GB", ram: '512MB', processador: "A9", tela: "TFT LCD" },//
-    { id: 58, name: 'Samsung Galaxy S3 Mini', armazenamento: "8GB", ram: '1GB', processador: "NovaThor U8420", tela: "Super AMOLED" },//
-    { id: 59, name: 'Samsung Galaxy Premier', armazenamento: "16GB", ram: '1GB', processador: "Texas Instruments OMAP 4470", tela: "Super AMOLED" },//
-    { id: 60, name: 'Samsung Galaxy Gran Duos', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A9 Broadcom BCM28155", tela: "TFT LCD" },//
-    { id: 61, name: 'Samsung Galaxy S2 Plus', armazenamento: "8GB", ram: '1GB', processador: "ARM Cortex A9", tela: "Super AMOLED Plus" },//
-    { id: 62, name: 'Samsung Galaxy Xcover 2', armazenamento: "4GB", ram: '1GB', processador: "Cortex-A9 ST Ericsson NovaThor U8500", tela: "TFT LCD" },//
+    { id: 47, name: 'Samsung Galaxy W', armazenamento: "2GB", ram: '512MB', processador: "Snapdragon Qualcomm MSM8255T", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/129134?w=159&h=304', spec:'2GB+512MB+Snapdragon Qualcomm MSM8255T+TFT LCD' },//
+    { id: 48, name: 'Samsung Galaxy Ace 2', armazenamento: "4GB", ram: '768MB', processador: "SAMSUNG", tela: "PLS LCD", avatar: 'https://t2.tudocdn.net/83653?w=160&h=302', spec:'4GB+768MB+SAMSUNG+PLS LCD' },//
+    { id: 49, name: 'Samsung Galaxy mini 2', armazenamento: "4GB", ram: '512MB', processador: "Qualcomm MSM7227", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83671?w=160&h=296', spec:'4GB+512MB+Qualcomm MSM7227+TFT LCD' },//
+    { id: 50, name: 'Samsung Galaxy Beam I8530', armazenamento: "8GB", ram: '768MB', processador: "ARM Cortex A9", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83660?w=159&h=304', spec:'8GB+768MB+ARM Cortex A9+TFT LCD' },//
+    { id: 51, name: 'Samsung Galaxy S3', armazenamento: "16GB", ram: '1GB', processador: "SAMSUNG Exynos 4412", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83779?w=159&h=304', spec:'16GB+1GB+SAMSUNG Exynos 4412+Super AMOLED' },//
+    { id: 52, name: 'Samsung Galaxy S2 Lite', armazenamento: "8GB", ram: '768MB', processador: "SAMSUNG", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/365816?w=156&h=304', spec:'8GB+768MB+SAMSUNG+Super AMOLED' },//
+    { id: 53, name: 'Samsung Galaxy S Duos S7562', armazenamento: "4GB", ram: '768MB', processador: "Snapdragon Qualcomm MSM7227A", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83692?w=160&h=304', spec:'4GB+768MB+Snapdragon Qualcomm MSM7227A+TFT LCD' },//
+    { id: 54, name: 'Samsung Galaxy Note 2', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A9 SAMSUNG Exynos 4412", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83723?w=160&h=298', spec:'32GB+2GB+Cortex-A9 SAMSUNG Exynos 4412+Super AMOLED' },//
+    { id: 55, name: 'Samsung Galaxy X', armazenamento: "16GB", ram: '1GB', processador: "Texas Instruments OMAP4460", tela: "Super AMOLED", avatar: '  ', spec:'16GB 1GB Texas Instruments OMAP4460 Super AMOLED' },//
+    { id: 56, name: 'Samsung Galaxy Music', armazenamento: "4GB", ram: '512MB', processador: "A9", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83672?w=160&h=293', spec:'4GB 512MB A9 TFT LCD' },//
+    { id: 57, name: 'Samsung Galaxy Music Duos', armazenamento: "4GB", ram: '512MB', processador: "A9", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83673?w=160&h=293', spec:'4GB 512MB A9 TFT LCD' },//
+    { id: 58, name: 'Samsung Galaxy S3 Mini', armazenamento: "8GB", ram: '1GB', processador: "NovaThor U8420", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83686?w=160&h=304', spec:'8GB 1GB NovaThor U8420 Super AMOLED' },//
+    { id: 59, name: 'Samsung Galaxy Premier', armazenamento: "16GB", ram: '1GB', processador: "Texas Instruments OMAP 4470", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83683?w=156&h=304', spec:'16GB 1GB Texas Instruments OMAP 4470 Super AMOLED' },//
+    { id: 60, name: 'Samsung Galaxy Gran Duos', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A9 Broadcom BCM28155", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83666?w=160&h=296', spec:'8GB 1GB Cortex-A9 Broadcom BCM28155 TFT LCD' },//
+    { id: 61, name: 'Samsung Galaxy S2 Plus', armazenamento: "8GB", ram: '1GB', processador: "ARM Cortex A9", tela: "Super AMOLED Plus", avatar: 'https://t2.tudocdn.net/83684?w=160&h=299', spec:'8GB 1GB ARM Cortex A9 Super AMOLED Plus' },//
+    { id: 62, name: 'Samsung Galaxy Xcover 2', armazenamento: "4GB", ram: '1GB', processador: "Cortex-A9 ST Ericsson NovaThor U8500", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83710?w=160&h=301', spec:'4GB 1GB Cortex-A9 ST Ericsson NovaThor U8500 TFT LCD' },//
     //{ id: 63, name: 'Samsung Galaxy Express', armazenamento: "8GB", ram: '1GB', processador: "Adreno 225", tela: "Super AMOLED Plus" },
-    { id: 64, name: 'Samsung Galaxy Young', armazenamento: "4GB", ram: '768MB', processador: "Cortex A5 Qualcomm Snapdragon MSM7227A", tela: "TFT LCD" },//
-    { id: 65, name: 'Samsung Galaxy S4 I9500', armazenamento: "32GB", ram: '2GB', processador: "SAMSUNG Exynos 5 Octa 5410", tela: "Super AMOLED" },//
-    { id: 66, name: 'Samsung Galaxy S4 Mini', armazenamento: "8GB", ram: '1.5GB', processador: "Snapdragon 400 Qualcomm MSM8930", tela: "Super AMOLED" },//
-    { id: 67, name: 'Samsung Galaxy Win', armazenamento: "8GB", ram: '1GB', processador: "Snapdragon 200 Qualcomm MSM8225Q", tela: "TFT LCD" },//
-    { id: 68, name: 'Samsung Galaxy S4 I9505', armazenamento: "16GB", ram: '2GB', processador: "Snapdragon 600 Qualcomm APQ8064T", tela: "Super AMOLED" },//
+    { id: 64, name: 'Samsung Galaxy Young', armazenamento: "4GB", ram: '768MB', processador: "Cortex A5 Qualcomm Snapdragon MSM7227A", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83712?w=160&h=294', spec:'4GB 768MB Cortex A5 Qualcomm Snapdragon MSM7227A TFT LCD' },//
+    { id: 65, name: 'Samsung Galaxy S4 I9500', armazenamento: "32GB", ram: '2GB', processador: "SAMSUNG Exynos 5 Octa 5410", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83780?w=156&h=304', spec:'32GB 2GB SAMSUNG Exynos 5 Octa 5410 Super AMOLED' },//
+    { id: 66, name: 'Samsung Galaxy S4 Mini', armazenamento: "8GB", ram: '1.5GB', processador: "Snapdragon 400 Qualcomm MSM8930", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83688?w=152&h=304', spec:'8GB 1.5GB Snapdragon 400 Qualcomm MSM8930 Super AMOLED' },//
+    { id: 67, name: 'Samsung Galaxy Win', armazenamento: "8GB", ram: '1GB', processador: "Snapdragon 200 Qualcomm MSM8225Q", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83708?w=160&h=304', spec:'8GB 1GB Snapdragon 200 Qualcomm MSM8225Q TFT LCD' },//
+    { id: 68, name: 'Samsung Galaxy S4 I9505', armazenamento: "16GB", ram: '2GB', processador: "Snapdragon 600 Qualcomm APQ8064T", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83781?w=156&h=304', spec:'16GB 2GB Snapdragon 600 Qualcomm APQ8064T Super AMOLED' },//
     //{ id: 69, name: 'Samsung Galaxy Note 8.0', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A9 Exynos 4412", tela: "TFT LCD" },
-    { id: 70, name: 'Samsung Galaxy S4 Active', armazenamento: "16GB", ram: '2GB', processador: "Snapdragon 600 Qualcomm APQ8064T", tela: "TFT LCD" },//
-    { id: 71, name: 'Samsung Galaxy S4 Zoom', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A9 SAMSUNG Exynos 4212", tela: "Super AMOLED" },//
-    { id: 72, name: 'Samsung Galaxy Note 3', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 800 Qualcomm MSM8974", tela: "Super AMOLED" },//
-    { id: 73, name: 'Samsung Galaxy S Plus', armazenamento: "16GB", ram: '512MB', processador: "Snapdragon Qualcomm MSM8255T", tela: "Super AMOLED" },//
-    { id: 74, name: 'Samsung Galaxy Gran 2', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 Qualcomm Snapdragon 400 MSM8226", tela: "TFT LCD" },//
-    { id: 75, name: 'Samsung Galaxy S Duos 2', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A9", tela: "TFT LCD" },//
-    { id: 76, name: 'Samsung Galaxy J', armazenamento: "16GB", ram: '3GB', processador: "Snapdragon 800 Qualcomm MSM8974", tela: "Super AMOLED" },//
-    { id: 77, name: 'Samsung Galaxy Gran Neo', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Broadcom BCM23550", tela: "TFT LCD" },//
-    { id: 78, name: 'Samsung Galaxy Note 3 Neo Duos', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A7 Qualcomm MSM8228", tela: "Super AMOLED" },//
-    { id: 79, name: 'Samsung Galaxy Star Trios', armazenamento: "4GB", ram: '512MB', processador: "Snapdragon Qualcomm MSM7225A", tela: "TFT LCD" },//
-    { id: 80, name: 'Samsung Galaxy Core LTE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A9", tela: "TFT LCD" },//
-    { id: 81, name: 'Samsung Galaxy S5', armazenamento: "16GB", ram: '2GB', processador: "Krait 400 Qualcomm Snapdragon 801", tela: "Super AMOLED" },//
-    { id: 82, name: 'Samsung Galaxy S3 mini VE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A9 Marvell PXA988", tela: "Super AMOLED" },//
-    { id: 83, name: 'Samsung Galaxy Ace Style', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A9 Broadcom BCM21664T", tela: "TFT LCD" },//
-    { id: 84, name: 'Samsung Galaxy S3 Neo', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A7 Qualcomm Snapdragon 400", tela: "Super AMOLED" },//
-    { id: 85, name: 'Samsung Galaxy Note 4', armazenamento: "32GB", ram: '3GB', processador: "Cortex A53 / Cortex A57 SAMSUNG Exynos 5433", tela: "Super AMOLED" },//
-    { id: 86, name: 'Samsung Galaxy Ace 4 LTE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED" },//
-    { id: 87, name: 'Samsung GALAXY S5 mini LTE', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3470", tela: "Super AMOLED" },//
-    { id: 88, name: 'Samsung GALAXY S5 mini', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3470", tela: "Super AMOLED" },//
-    { id: 89, name: 'Samsung Galaxy Star 2', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A7 Spreadtrum SC6815A", tela: "TFT LCD" },//
-    { id: 90, name: 'Samsung Galaxy S5 Neo', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7580", tela: "Super AMOLED" },//
-    { id: 91, name: 'Samsung Galaxy Ace NXT', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A7 Spreadtrum Dolphin SC7715", tela: "TFT LCD" },//
-    { id: 92, name: 'Samsung Galaxy Alpha', armazenamento: "32GB", ram: '2GB', processador: "Cortex A15 / Cortex A7 SAMSUNG Exynos 5 Octa 5430", tela: "Super AMOLED" },//
-    { id: 93, name: 'Samsung Galaxy Mega 2', armazenamento: "8GB", ram: '1.5GB', processador: "Snapdragon 410 Qualcomm Cortex-A53", tela: "LCD" },//
-    { id: 94, name: 'Samsung Galaxy Note edge', armazenamento: "64GB", ram: '3GB', processador: "Qualcomm Snapdragon 805 APQ8084", tela: "Super AMOLED" },//
-    { id: 95, name: 'Samsung Galaxy A5', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410", tela: "Super AMOLED" },//
-    { id: 96, name: 'Samsung Galaxy A3', armazenamento: "16GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410", tela: "Super AMOLED" },//
-    { id: 97, name: 'Samsung Galaxy Gran Prime Duos TV', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD" },//
-    { id: 98, name: 'Samsung Galaxy Core Plus', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A9 Broadcom BCM28155", tela: "TFT LCD" },
-    { id: 99, name: 'Samsung Z1', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A7 Spreadtrum SC7727S", tela: "PLS LCD" },
-    { id: 100, name: 'Samsung Galaxy E5', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED" },
-    { id: 101, name: 'Samsung Galaxy E7', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED" },
-    { id: 102, name: 'Samsung Galaxy Core Prime', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "LCD" },
-    { id: 103, name: 'Samsung Galaxy J1', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A7 Spreadtrum", tela: "TFT LCD" },
-    { id: 104, name: 'Samsung Galaxy Win 2', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD" },//
-    { id: 105, name: 'Samsung Galaxy J7', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 SAMSUNG Exynos 7580", tela: "Super AMOLED" },
-    { id: 106, name: 'Samsung Galaxy A8', armazenamento: "32GB", ram: '2GB', processador: "Qualcomm Snapdragon 615 MSM8939", tela: "Super AMOLED" },
-    { id: 107, name: 'Samsung Galaxy S4 Mini Plus', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED" },
-    { id: 108, name: 'Samsung Galaxy S6 edge plus', armazenamento: "32GB", ram: '4GB', processador: "SAMSUNG Exynos 7420", tela: "Super AMOLED" },
-    { id: 109, name: 'Samsung Galaxy J2', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3475", tela: "Super AMOLED" },
-    { id: 110, name: 'Samsung Z3', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Spreadtrum SC7730", tela: "Super AMOLED" },
-    { id: 111, name: 'Samsung Galaxy J1 Ace', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A53 Marvell PXA1908", tela: "Super AMOLED" },
-    { id: 112, name: 'Samsung Galaxy On 7', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD" },
-    { id: 113, name: 'Samsung Galaxy On 5', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3475", tela: "TFT LCD" },
-    { id: 114, name: 'Samsung Galaxy J3', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 Spreadtrum", tela: "Super AMOLED" },
-    { id: 115, name: 'Samsung Galaxy A5 2016', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7580", tela: "Super AMOLED" },
-    { id: 116, name: 'Samsung Galaxy A3 2016', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 SAMSUNG Exynos 7578", tela: "Super AMOLED" },
-    { id: 117, name: 'Samsung Galaxy On 5', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3475", tela: "TFT LCD" },
-    { id: 118, name: 'Samsung Galaxy A9 2016', armazenamento: "32GB", ram: '4GB', processador: "MSM8976 Qualcomm Snapdragon 652", tela: "Super AMOLED" },
-    { id: 119, name: 'Samsung Galaxy Gran Prime', armazenamento: "8GB", ram: '1GB', processador: "Snapdragon 410 Qualcomm MSM8916", tela: "TFT LCD" },
-    { id: 120, name: 'Samsung Galaxy Gran Prime LTE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD" },//
-    { id: 121, name: 'Samsung Galaxy S7', armazenamento: "32GB", ram: '4GB', processador: "SAMSUNG Exynos 8 Octa 8890", tela: "Super AMOLED" },
-    { id: 122, name: 'Samsung Galaxy J1 Mini', armazenamento: "8GB", ram: '768MB', processador: "Cortex-A7 Spreadtrum SC8830", tela: "TFT LCD" },
-    { id: 123, name: 'Samsung Galaxy Xcover 3', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A53 Marvell PXA1908", tela: "TFT LCD" },
-    { id: 124, name: 'Samsung Galaxy C5', armazenamento: "64GB", ram: '4GB', processador: "MSM8952 Qualcomm Snapdragon 617", tela: "Super AMOLED" },
-    { id: 125, name: 'Samsung Galaxy C7', armazenamento: "64GB", ram: '4GB', processador: "Cortex-A53 Qualcomm Snapdragon 625 MSM8953", tela: "Super AMOLED" },
-    { id: 126, name: 'Samsung Galaxy J2 2016', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 Spreadtrum SC8830", tela: "Super AMOLED" },
-    { id: 127, name: 'Samsung Galaxy J Max', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7", tela: "TFT LCD" },
-    { id: 128, name: 'Samsung Galaxy On 7 Pro', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD" },
-    { id: 129, name: 'Samsung Galaxy On 5 Pro', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A7 SAMSUNG Exynos 3475", tela: "TFT LCD" },
-    { id: 130, name: 'Samsung Galaxy J2 Pro', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A7 Spreadtrum SC8830", tela: "Super AMOLED" },
-    { id: 131, name: 'Samsung Galaxy Note 7', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 8 Octa 8890", tela: "Super AMOLED" },
-    { id: 132, name: 'Samsung Galaxy J1 Ace 4G', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Marvell PXA1908", tela: "Super AMOLED" },
-    { id: 133, name: 'Samsung Z2', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Spreadtrum SC9830A", tela: "IPS LCD" },
-    { id: 134, name: 'Samsung Galaxy On 7 2016', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 Qualcomm Snapdragon 625 MSM8953", tela: "LCD" },
-    { id: 135, name: 'Samsung Galaxy On 8', armazenamento: "16GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7580", tela: "Super AMOLED" },
-    { id: 136, name: 'Samsung Galaxy On 5 2016', armazenamento: "32GB", ram: '3GB', processador: "MSM8952 Qualcomm Snapdragon 617", tela: "PLS TFT" },
-    { id: 137, name: 'Samsung Galaxy J5 Prime', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Quad 7570", tela: "TFT LCD" },
-    { id: 138, name: 'Samsung Galaxy A8 2016', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7420", tela: "Super AMOLED" },
-     { id: 139, name: 'Samsung Galaxy C9 Pro', armazenamento: "64GB", ram: '6GB', processador: "MSM8976 Qualcomm Snapdragon 653", tela: "Super AMOLED" },
-     { id: 140, name: 'Samsung Galaxy J2 Prime', armazenamento: "16GB", ram: '1.4GB', processador: "Cortex-A53 MediaTek MT6737T", tela: "PLS TFT" },
-     { id: 141, name: 'Samsung Galaxy A3 2017', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED  " },
-     { id: 142, name: 'Samsung Galaxy A5 2017', armazenamento: "64GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7880", tela: "Super AMOLED" },
-     { id: 143, name: 'Samsung Galaxy A7 2017', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7880", tela: "Super AMOLED" },
-     { id: 144, name: 'Samsung Galaxy C7 Pro', armazenamento: "64GB", ram: '4GB', processador: "Cortex-A53 Qualcomm Snapdragon 625 MSM8953", tela: "Super AMOLED" },
-     { id: 145, name: 'Samsung Galaxy C5 Pro', armazenamento: "64GB", ram: '4GB', processador: "MSM8953 Pro Qualcomm Snapdragon 626", tela: "Super AMOLED" },
-     { id: 146, name: 'Samsung Z4', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Spreadtrum SC9830A", tela: "LCD" },
-     { id: 147, name: 'Samsung Galaxy Note FE', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 8 Octa 8890", tela: "Super AMOLED" },
-     { id: 148, name: 'Samsung Galaxy J7 Max', armazenamento: "32GB", ram: '4GB', processador: "Helio P20 MediaTek MT6757", tela: "PLS TFT" },
-     { id: 149, name: 'Samsung Galaxy J7 2017', armazenamento: "16GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED" },
-     { id: 150, name: 'Samsung Galaxy J5 2017', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED" },
-     { id: 151, name: 'Samsung Galaxy J3 2017', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7570", tela: "PLS TFT" },
-     { id: 152, name: 'Samsung Galaxy J7 Pro', armazenamento: "64GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED" },
-     { id: 153, name: 'Samsung Galaxy A8 Plus 2018', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 7885", tela: "Super AMOLED" },
-     { id: 154, name: 'Samsung Galaxy J2 Pro 2018', armazenamento: "16GB", ram: '1.5GB', processador: "Qualcomm Snapdragon 425 MSM8917", tela: "Super AMOLED" },
-     { id: 155, name: 'Samsung Galaxy J7 Duo', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7884", tela: "Super AMOLED" },//
-     { id: 156, name: 'Samsung Galaxy A6', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED" },
-     { id: 157, name: 'Samsung Galaxy J4', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Quad 7570", tela: "Super AMOLED" },
-     { id: 158, name: 'Samsung Galaxy J7 2018', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "TFT LCD" },
-     { id: 159, name: 'Samsung Galaxy J3 2018', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7570", tela: "IPS LCD" },
-     { id: 160, name: 'Samsung Galaxy J4 Plus', armazenamento: "32GB", ram: '2GB', processador: "Snapdragon 425 Qualcomm SDM425", tela: "IPS LCD" },
-     { id: 161, name: 'Samsung Galaxy A9', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 660 Qualcomm SDM660", tela: "Super AMOLED" },
-     { id: 162, name: 'Samsung Galaxy A6s', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 660 Qualcomm SDM660", tela: "PLS LCD" },
-     { id: 163, name: 'Samsung W2018', armazenamento: "64GB", ram: '6GB', processador: "Snapdragon 835 Qualcomm SDM835", tela: "Super AMOLED" },
-     { id: 164, name: 'Samsung W2019', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 845 Qualcomm SDM845", tela: "Super AMOLED" },
-     { id: 165, name: 'Samsung Galaxy A8s', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 710 Qualcomm SDM710", tela: "TFT LCD" },
-     { id: 166, name: 'Samsung Galaxy M10', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "PLS TFT" },
-     { id: 167, name: 'Samsung Galaxy M20', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 7904", tela: "PLS TFT" },
-     { id: 168, name: 'Samsung Galaxy M30', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 7904", tela: "Super AMOLED" },
-     { id: 169, name: 'Samsung Galaxy A9 Pro', armazenamento: "32GB", ram: '4GB', processador: "MSM8976 Qualcomm Snapdragon 652", tela: "Super AMOLED" },
-     { id: 170, name: 'Samsung Galaxy Fold', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 855 Qualcomm SDM855", tela: "Dynamic AMOLED" },
-     { id: 171, name: 'Samsung Galaxy S10 5G', armazenamento: "256GB", ram: '8GB', processador: "Snapdragon 855 Qualcomm SDM855", tela: "Dynamic AMOLED" },
-     { id: 172, name: 'Samsung Galaxy A50', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 9610", tela: "Super AMOLED" },//
-     { id: 173, name: 'Samsung Galaxy A20', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7884", tela: "Super AMOLED" },//
-     { id: 174, name: 'Samsung Galaxy A70', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 675 Qualcomm SDM675", tela: "Super AMOLED" },
-     { id: 175, name: 'Samsung Galaxy A80', armazenamento: "128GB", ram: '8GB', processador: "Snapdragon 730G Qualcomm SDM730G", tela: "Super AMOLED" },
-     { id: 176, name: 'Samsung Galaxy Xcover 4s', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7885", tela: "IPS LCD" },
-     { id: 177, name: 'Samsung Galaxy Note 10 Plus', armazenamento: "512GB", ram: '12GB', processador: "SAMSUNG Exynos 9825", tela: "Dynamic AMOLED" },
-     { id: 178, name: 'Samsung Galaxy A10e', armazenamento: "32GB", ram: '2GB', processador: "SAMSUNG Exynos 7 Octa 7884B", tela: "TFT LCD" },
-     { id: 179, name: 'Samsung Galaxy A50s', armazenamento: "128GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED" },
-     { id: 180, name: 'Samsung Galaxy Note 10 Plus 5G', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 855 Qualcomm SDM855", tela: "Dynamic AMOLED" },
-     { id: 181, name: 'Samsung Galaxy M10s', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7884B", tela: "Super AMOLED" },
-     { id: 182, name: 'Samsung Galaxy M30s', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED" },
-     { id: 183, name: 'Samsung Galaxy A70s', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 675 Qualcomm SDM675", tela: "Super AMOLED" },
-     { id: 184, name: 'Samsung Galaxy Fold 5G', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 855 Plus Qualcomm SDM855", tela: "Dynamic AMOLED" },
-     { id: 185, name: 'Samsung Galaxy S20 5G', armazenamento: "128GB", ram: '12GB', processador: "SAMSUNG Exynos 990", tela: "Dynamic AMOLED" },
-     { id: 186, name: 'Samsung Galaxy M21', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED" },
-     { id: 187, name: 'Samsung Galaxy M11', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 450 Qualcomm SDM450", tela: "PLS TFT" },
-     { id: 188, name: 'Samsung Galaxy A71 5G', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 980", tela: "Super AMOLED" },
-     { id: 189, name: 'Samsung Galaxy A21', armazenamento: "32GB", ram: '3GB', processador: "Helio P35 MediaTek MT6765", tela: "TFT LCD" },
-     { id: 190, name: 'Samsung Galaxy A51 5G', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 980", tela: "Super AMOLED" },
-     { id: 191, name: 'Samsung Galaxy A Quantum', armazenamento: "128GB", ram: '8GB', processador: "SAMSUNG Exynos 980", tela: "Super AMOLED" },
-     { id: 192, name: 'Samsung Galaxy Z Flip 5G', armazenamento: "256GB", ram: '8GB', processador: "Snapdragon 865 Plus Qualcomm SM8250", tela: "Dynamic AMOLED" },
-     { id: 193, name: 'Samsung Galaxy M01', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 439 Qualcomm SDM439", tela: "PLS TFT" },
-     { id: 194, name: 'Samsung Galaxy M01s', armazenamento: "32GB", ram: '3GB', processador: "Helio P22 MediaTek MT6762", tela: "PLS TFT LCD" },
-     { id: 195, name: 'Samsung Galaxy M01 Core', armazenamento: "16GB", ram: '1GB', processador: "MediaTek MT6739", tela: "PLS TFT LCD" },
-     { id: 196, name: 'Samsung Galaxy M31s', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED" },
-     { id: 197, name: 'Samsung Galaxy M31 Prime', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED" },
-     { id: 198, name: 'Samsung W21', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 865 Plus Qualcomm SM8250", tela: "Dynamic AMOLED 2X" },
-     { id: 199, name: 'Samsung Galaxy M02s', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 450 Qualcomm SDM450", tela: "PLS LCD" },
-     { id: 200, name: 'Samsung Galaxy XCover 5', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 850", tela: "PLS TFT LCD" },
-     { id: 201, name: 'Samsung Galaxy Quantum 2', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 855 Plus Qualcomm SDM855", tela: "Dynamic AMOLED 2X" },
-     { id: 202, name: 'Samsung Galaxy F12', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 850", tela: "IPS LCD" },
-     { id: 203, name: 'Samsung Galaxy F02s', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 450 Qualcomm SDM450", tela: "IPS LCD" },
-     { id: 204, name: 'Samsung Galaxy F52 5G', armazenamento: "128GB", ram: '8GB', processador: "Snapdragon 750G Qualcomm SM7225", tela: "TFT LCD" },
-     { id: 205, name: 'Samsung Galaxy F22', armazenamento: "128GB", ram: '4GB', processador: "Helio G80 MediaTek", tela: "Super AMOLED" },
-     { id: 206, name: 'Samsung Galaxy M21 2021', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED" },
-     { id: 207, name: 'Samsung Galaxy A12 Nacho', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 850", tela: "PLS TFT LCD" },
-     { id: 208, name: 'Samsung Galaxy M32 5G', armazenamento: "128GB", ram: '6GB', processador: "Dimensity 720 MediaTek MT6853", tela: "TFT LCD" },
-     { id: 209, name: 'Samsung Galaxy A13 5G', armazenamento: "64GB", ram: '4GB', processador: "Dimensity 700 MediaTek MT6833", tela: "IPS LCD" },
-     { id: 210, name: 'Samsung Galaxy M33', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 1280", tela: "TFT LCD" },
-     { id: 211, name: 'Samsung Galaxy M23', armazenamento: "128GB", ram: '4GB', processador: "Snapdragon 750G Qualcomm SM7225", tela: "TFT LCD" },
-     { id: 212, name: 'Samsung Galaxy F23', armazenamento: "128GB", ram: '4GB', processador: "Snapdragon 750G Qualcomm SM7225", tela: "IPS LCD" },
-     { id: 213, name: 'Samsung Galaxy Quantum 3', armazenamento: "128GB", ram: '8GB', processador: "Dimensity 900 MediaTek MT6877", tela: "Super AMOLED Plus" },
-     { id: 214, name: 'Samsung Galaxy A7', armazenamento: "16GB", ram: '2GB', processador: "Qualcomm Snapdragon 615 MSM8939", tela: "Super AMOLED" },
-     { id: 215, name: 'Samsung Galaxy S6 edge', armazenamento: "64GB", ram: '3GB', processador: "SAMSUNG Exynos 7420", tela: "Super AMOLED" },
-     { id: 216, name: 'Samsung Galaxy S6', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7420", tela: "Super AMOLED" },
-     { id: 217, name: 'Samsung Galaxy J1 2016', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3475", tela: "Super AMOLED" },
-     { id: 218, name: 'Samsung Galaxy J7 Metal (2016)', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7870", tela: "Super AMOLED" },
-     { id: 219, name: 'Samsung Galaxy J5 Metal (2016)', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED" },
+    { id: 70, name: 'Samsung Galaxy S4 Active', armazenamento: "16GB", ram: '2GB', processador: "Snapdragon 600 Qualcomm APQ8064T", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83687?w=156&h=304', spec:'16GB 2GB Snapdragon 600 Qualcomm APQ8064T TFT LCD' },//
+    { id: 71, name: 'Samsung Galaxy S4 Zoom', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A9 SAMSUNG Exynos 4212", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83714?w=155&h=304', spec:'8GB 1.5GB Cortex-A9 SAMSUNG Exynos 4212 Super AMOLED' },//
+    { id: 72, name: 'Samsung Galaxy Note 3', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 800 Qualcomm MSM8974", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83678?w=160&h=304', spec:'32GB 3GB Snapdragon 800 Qualcomm MSM8974 Super AMOLED' },//
+    { id: 73, name: 'Samsung Galaxy S Plus', armazenamento: "16GB", ram: '512MB', processador: "Snapdragon Qualcomm MSM8255T", tela: "Super AMOLED", avatar: '    ', spec:'16GB 512MB Snapdragon Qualcomm MSM8255T Super AMOLED' },//
+    { id: 74, name: 'Samsung Galaxy Gran 2', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 Qualcomm Snapdragon 400 MSM8226", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83715?w=157&h=304', spec:'8GB 1.5GB Cortex-A7 Qualcomm Snapdragon 400 MSM8226 TFT LCD' },//
+    { id: 75, name: 'Samsung Galaxy S Duos 2', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A9", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83695?w=159&h=304', spec:'4GB 768MB Cortex-A9 TFT LCD' },//
+    { id: 76, name: 'Samsung Galaxy J', armazenamento: "16GB", ram: '3GB', processador: "Snapdragon 800 Qualcomm MSM8974", tela: "Super AMOLED", avatar: '   ', spec:'16GB 3GB Snapdragon 800 Qualcomm MSM8974 Super AMOLED' },//
+    { id: 77, name: 'Samsung Galaxy Gran Neo', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Broadcom BCM23550", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83667?w=160&h=292', spec:'8GB 1GB Cortex-A7 Broadcom BCM23550 TFT LCD' },//
+    { id: 78, name: 'Samsung Galaxy Note 3 Neo Duos', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A7 Qualcomm MSM8228", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83676?w=159&h=304', spec:'16GB 2GB Cortex-A7 Qualcomm MSM8228 Super AMOLED' },//
+    { id: 79, name: 'Samsung Galaxy Star Trios', armazenamento: "4GB", ram: '512MB', processador: "Snapdragon Qualcomm MSM7225A", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83697?w=160&h=281', spec:'4GB 512MB Snapdragon Qualcomm MSM7225A TFT LCD' },//
+    { id: 80, name: 'Samsung Galaxy Core LTE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A9", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83663?w=153&h=304', spec:'8GB 1GB Cortex-A9 TFT LCD' },//
+    { id: 81, name: 'Samsung Galaxy S5', armazenamento: "16GB", ram: '2GB', processador: "Krait 400 Qualcomm Snapdragon 801", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83690?w=157&h=304', spec:'16GB 2GB Krait 400 Qualcomm Snapdragon 801 Super AMOLED' },//
+    { id: 82, name: 'Samsung Galaxy S3 mini VE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A9 Marvell PXA988", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83693?w=159&h=304', spec:'8GB 1GB Cortex-A9 Marvell PXA988 Super AMOLED' },//
+    { id: 83, name: 'Samsung Galaxy Ace Style', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A9 Broadcom BCM21664T", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83659?w=159&h=304', spec:'4GB 512MB Cortex-A9 Broadcom BCM21664T TFT LCD' },//
+    { id: 84, name: 'Samsung Galaxy S3 Neo', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A7 Qualcomm Snapdragon 400", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83685?w=159&h=304', spec:'16GB 1.5GB Cortex-A7 Qualcomm Snapdragon 400 Super AMOLED' },//
+    { id: 85, name: 'Samsung Galaxy Note 4', armazenamento: "32GB", ram: '3GB', processador: "Cortex A53 / Cortex A57 SAMSUNG Exynos 5433", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/90710?w=157&h=304', spec:'32GB 3GB Cortex A53 / Cortex A57 SAMSUNG Exynos 5433 Super AMOLED' },//
+    { id: 86, name: 'Samsung Galaxy Ace 4 LTE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/129946?w=158&h=304', spec:'8GB 1GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 Super AMOLED' },//
+    { id: 87, name: 'Samsung GALAXY S5 mini LTE', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3470", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/88729?w=152&h=304', spec:'16GB 1.5GB Cortex-A7 SAMSUNG Exynos 3 Quad 3470 Super AMOLED' },//
+    { id: 88, name: 'Samsung GALAXY S5 mini', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3470", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/83691?w=152&h=304', spec:'16GB 1.5GB Cortex-A7 SAMSUNG Exynos 3 Quad 3470 Super AMOLED' },//
+    { id: 89, name: 'Samsung Galaxy Star 2', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A7 Spreadtrum SC6815A", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/83696?w=160&h=289', spec:'4GB 512MB Cortex-A7 Spreadtrum SC6815A TFT LCD' },//
+    { id: 90, name: 'Samsung Galaxy S5 Neo', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7580", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/146002?w=157&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7580 Super AMOLED' },//
+    { id: 91, name: 'Samsung Galaxy Ace NXT', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A7 Spreadtrum Dolphin SC7715", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/85288?w=160&h=304', spec:'4GB 512MB Cortex-A7 Spreadtrum Dolphin SC7715 TFT LCD' },//
+    { id: 92, name: 'Samsung Galaxy Alpha', armazenamento: "32GB", ram: '2GB', processador: "Cortex A15 / Cortex A7 SAMSUNG Exynos 5 Octa 5430", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/87157?w=154&h=304', spec:'32GB 2GB Cortex A15 / Cortex A7 SAMSUNG Exynos 5 Octa 5430 Super AMOLED' },//
+    { id: 93, name: 'Samsung Galaxy Mega 2', armazenamento: "8GB", ram: '1.5GB', processador: "Snapdragon 410 Qualcomm Cortex-A53", tela: "LCD", avatar: 'https://t2.tudocdn.net/89752?w=160&h=304', spec:'8GB 1.5GB Snapdragon 410 Qualcomm Cortex-A53 LCD' },//
+    { id: 94, name: 'Samsung Galaxy Note edge', armazenamento: "64GB", ram: '3GB', processador: "Qualcomm Snapdragon 805 APQ8084", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/90744?w=160&h=295', spec:'64GB 3GB Qualcomm Snapdragon 805 APQ8084 Super AMOLED' },//
+    { id: 95, name: 'Samsung Galaxy A5', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410", tela: "Super AMOLED", avatar: '   ', spec:'16GB 2GB Cortex-A53 Qualcomm Snapdragon 410 Super AMOLED' },//
+    { id: 96, name: 'Samsung Galaxy A3', armazenamento: "16GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410", tela: "Super AMOLED", avatar: '  ', spec:'16GB 1GB Cortex-A53 Qualcomm Snapdragon 410 Super AMOLED' },//
+    { id: 97, name: 'Samsung Galaxy Gran Prime Duos TV', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/104587?w=154&h=304', spec:'8GB 1GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 TFT LCD' },//
+    { id: 98, name: 'Samsung Galaxy Core Plus', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A9 Broadcom BCM28155", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/104590?w=156&h=304', spec:'4GB 768MB Cortex-A9 Broadcom BCM28155 TFT LCD' },
+    { id: 99, name: 'Samsung Z1', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A7 Spreadtrum SC7727S", tela: "PLS LCD", avatar: 'https://t2.tudocdn.net/112230?w=160&h=300', spec:'4GB 768MB Cortex-A7 Spreadtrum SC7727S PLS LCD' },
+    { id: 100, name: 'Samsung Galaxy E5', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/110003?w=153&h=304', spec:'16GB 1.5GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 Super AMOLED' },
+    { id: 101, name: 'Samsung Galaxy E7', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/110075?w=156&h=304', spec:'16GB 2GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 Super AMOLED' },
+    { id: 102, name: 'Samsung Galaxy Core Prime', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "LCD", avatar: 'https://t2.tudocdn.net/110162?w=160&h=300', spec:'8GB 1GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 LCD' },
+    { id: 103, name: 'Samsung Galaxy J1', armazenamento: "4GB", ram: '768MB', processador: "Cortex-A7 Spreadtrum", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/116136?w=160&h=301', spec:'4GB 768MB Cortex-A7 Spreadtrum TFT LCD' },
+    { id: 104, name: 'Samsung Galaxy Win 2', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/121419?w=160&h=301', spec:'8GB 1GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 TFT LCD' },//
+    { id: 105, name: 'Samsung Galaxy J7', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 SAMSUNG Exynos 7580", tela: "Super AMOLED", avatar: '   ', spec:'16GB 1.5GB Cortex-A53 SAMSUNG Exynos 7580 Super AMOLED' },
+    { id: 106, name: 'Samsung Galaxy A8', armazenamento: "32GB", ram: '2GB', processador: "Qualcomm Snapdragon 615 MSM8939", tela: "Super AMOLED", avatar: '   ', spec:'32GB 2GB Qualcomm Snapdragon 615 MSM8939 Super AMOLED' },
+    { id: 107, name: 'Samsung Galaxy S4 Mini Plus', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/137797?w=152&h=304', spec:'8GB 1.5GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 Super AMOLED' },
+    { id: 108, name: 'Samsung Galaxy S6 edge plus', armazenamento: "32GB", ram: '4GB', processador: "SAMSUNG Exynos 7420", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/140265?w=151&h=304', spec:'32GB 4GB SAMSUNG Exynos 7420 Super AMOLED' },
+    { id: 109, name: 'Samsung Galaxy J2', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3475", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/143328?w=155&h=304', spec:'8GB 1GB Cortex-A7 SAMSUNG Exynos 3 Quad 3475 Super AMOLED' },
+    { id: 110, name: 'Samsung Z3', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Spreadtrum SC7730", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/147447?w=152&h=304', spec:'8GB 1GB Cortex-A7 Spreadtrum SC7730 Super AMOLED' },
+    { id: 111, name: 'Samsung Galaxy J1 Ace', armazenamento: "4GB", ram: '512MB', processador: "Cortex-A53 Marvell PXA1908", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/148069?w=160&h=304', spec:'4GB 512MB Cortex-A53 Marvell PXA1908 Super AMOLED' },
+    { id: 112, name: 'Samsung Galaxy On 7', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/148615?w=158&h=304', spec:'16GB 1.5GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 TFT LCD' },
+    { id: 113, name: 'Samsung Galaxy On 5', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3475", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/148616?w=158&h=304', spec:'8GB 1.5GB Cortex-A7 SAMSUNG Exynos 3475 TFT LCD' },
+    { id: 114, name: 'Samsung Galaxy J3', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 Spreadtrum", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/152044?w=154&h=304', spec:'8GB 1.5GB Cortex-A7 Spreadtrum Super AMOLED' },
+    { id: 115, name: 'Samsung Galaxy A5 2016', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7580", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/153398?w=151&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7 Octa 7580 Super AMOLED' },
+    { id: 116, name: 'Samsung Galaxy A3 2016', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 SAMSUNG Exynos 7578", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/153400?w=150&h=304', spec:'16GB 1.5GB Cortex-A53 SAMSUNG Exynos 7578 Super AMOLED' },
+    // { id: 117, name: 'Samsung Galaxy On 5', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 SAMSUNG Exynos 3475", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/110003?w=153&h=304', spec:'16GB 1.5GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 Super AMOLED' },
+    { id: 118, name: 'Samsung Galaxy A9 2016', armazenamento: "32GB", ram: '4GB', processador: "MSM8976 Qualcomm Snapdragon 652", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/155496?w=155&h=304', spec:'32GB 4GB MSM8976 Qualcomm Snapdragon 652 Super AMOLED' },
+    { id: 119, name: 'Samsung Galaxy Gran Prime', armazenamento: "8GB", ram: '1GB', processador: "Snapdragon 410 Qualcomm MSM8916", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/159821?w=153&h=304', spec:'8GB 1GB Snapdragon 410 Qualcomm MSM8916 TFT LCD' },
+    { id: 120, name: 'Samsung Galaxy Gran Prime LTE', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/159824?w=154&h=304', spec:'8GB 1GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 TFT LCD' },//
+    { id: 121, name: 'Samsung Galaxy S7', armazenamento: "32GB", ram: '4GB', processador: "SAMSUNG Exynos 8 Octa 8890", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/200801?w=146&h=304', spec:'32GB 4GB SAMSUNG Exynos 8 Octa 8890 Super AMOLED' },
+    { id: 122, name: 'Samsung Galaxy J1 Mini', armazenamento: "8GB", ram: '768MB', processador: "Cortex-A7 Spreadtrum SC8830", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/162211?w=160&h=302', spec:'8GB 768MB Cortex-A7 Spreadtrum SC8830 TFT LCD' },
+    { id: 123, name: 'Samsung Galaxy Xcover 3', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A53 Marvell PXA1908", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/171421?w=160&h=300', spec:'8GB 1.5GB Cortex-A53 Marvell PXA1908 TFT LCD' },
+    { id: 124, name: 'Samsung Galaxy C5', armazenamento: "64GB", ram: '4GB', processador: "MSM8952 Qualcomm Snapdragon 617", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/181404?w=150&h=304', spec:'64GB 4GB MSM8952 Qualcomm Snapdragon 617 Super AMOLED' },
+    { id: 125, name: 'Samsung Galaxy C7', armazenamento: "64GB", ram: '4GB', processador: "Cortex-A53 Qualcomm Snapdragon 625 MSM8953", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/181405?w=150&h=304', spec:'64GB 4GB Cortex-A53 Qualcomm Snapdragon 625 MSM8953 Super AMOLED' },
+    { id: 126, name: 'Samsung Galaxy J2 2016', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7 Spreadtrum SC8830", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/181430?w=152&h=304', spec:'8GB 1.5GB Cortex-A7 Spreadtrum SC8830 Super AMOLED' },
+    { id: 127, name: 'Samsung Galaxy J Max', armazenamento: "8GB", ram: '1.5GB', processador: "Cortex-A7", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/181440?w=160&h=275', spec:'8GB 1.5GB Cortex-A7 TFT LCD' },
+    { id: 128, name: 'Samsung Galaxy On 7 Pro', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/181447?w=158&h=304', spec:'16GB 2GB Cortex-A53 Qualcomm Snapdragon 410 MSM8916 TFT LCD' },
+    { id: 129, name: 'Samsung Galaxy On 5 Pro', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A7 SAMSUNG Exynos 3475", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/181651?w=158&h=304', spec:'16GB 2GB Cortex-A7 SAMSUNG Exynos 3475 TFT LCD' },
+    { id: 130, name: 'Samsung Galaxy J2 Pro', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A7 Spreadtrum SC8830", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/183850?w=152&h=304', spec:'16GB 2GB Cortex-A7 Spreadtrum SC8830 Super AMOLED' },
+    { id: 131, name: 'Samsung Galaxy Note 7', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 8 Octa 8890", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/273649?w=146&h=304', spec:'64GB 4GB SAMSUNG Exynos 8 Octa 8890 Super AMOLED' },
+    { id: 132, name: 'Samsung Galaxy J1 Ace 4G', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A53 Marvell PXA1908", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/188487?w=160&h=304', spec:'8GB 1GB Cortex-A53 Marvell PXA1908 Super AMOLED' },
+    { id: 133, name: 'Samsung Z2', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Spreadtrum SC9830A", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/188639?w=159&h=304', spec:'8GB 1GB Cortex-A7 Spreadtrum SC9830A IPS LCD' },
+    { id: 134, name: 'Samsung Galaxy On 7 2016', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 Qualcomm Snapdragon 625 MSM8953", tela: "LCD", avatar: 'https://t2.tudocdn.net/196868?w=153&h=304', spec:'32GB 3GB Cortex-A53 Qualcomm Snapdragon 625 MSM8953 LCD' },
+    { id: 135, name: 'Samsung Galaxy On 8', armazenamento: "16GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7580", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/196869?w=155&h=304', spec:'16GB 3GB Cortex-A53 SAMSUNG Exynos 7 Octa 7580 Super AMOLED' },
+    { id: 136, name: 'Samsung Galaxy On 5 2016', armazenamento: "32GB", ram: '3GB', processador: "MSM8952 Qualcomm Snapdragon 617", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/212151?w=143&h=304', spec:'32GB 3GB MSM8952 Qualcomm Snapdragon 617 PLS TFT' },
+    { id: 137, name: 'Samsung Galaxy J5 Prime', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Quad 7570", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/196873?w=152&h=304', spec:'32GB 2GB Cortex-A53 SAMSUNG Exynos 7 Quad 7570 TFT LCD' },
+    { id: 138, name: 'Samsung Galaxy A8 2016', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7420", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/197497?w=151&h=304', spec:'32GB 3GB SAMSUNG Exynos 7 Octa 7420 Super AMOLED' },
+     { id: 139, name: 'Samsung Galaxy C9 Pro', armazenamento: "64GB", ram: '6GB', processador: "MSM8976 Qualcomm Snapdragon 653", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/201980?w=150&h=304', spec:'64GB 6GB MSM8976 Qualcomm Snapdragon 653 Super AMOLED' },
+     { id: 140, name: 'Samsung Galaxy J2 Prime', armazenamento: "16GB", ram: '1.4GB', processador: "Cortex-A53 MediaTek MT6737T", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/207553?w=150&h=304', spec:'16GB 1.4GB Cortex-A53 MediaTek MT6737T PLS TFT' },
+     { id: 141, name: 'Samsung Galaxy A3 2017', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/216397?w=147&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7870 Octa Super AMOLED' },
+     { id: 142, name: 'Samsung Galaxy A5 2017', armazenamento: "64GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7880", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/216449?w=146&h=304', spec:'64GB 3GB Cortex-A53 SAMSUNG Exynos 7 Octa 7880 Super AMOLED' },
+     { id: 143, name: 'Samsung Galaxy A7 2017', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7880", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/216444?w=146&h=304', spec:'32GB 3GB Cortex-A53 SAMSUNG Exynos 7 Octa 7880 Super AMOLED' },
+     { id: 144, name: 'Samsung Galaxy C7 Pro', armazenamento: "64GB", ram: '4GB', processador: "Cortex-A53 Qualcomm Snapdragon 625 MSM8953", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/219436?w=148&h=304', spec:'64GB 4GB Cortex-A53 Qualcomm Snapdragon 625 MSM8953 Super AMOLED' },
+     { id: 145, name: 'Samsung Galaxy C5 Pro', armazenamento: "64GB", ram: '4GB', processador: "MSM8953 Pro Qualcomm Snapdragon 626", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/229879?w=147&h=304', spec:'64GB 4GB MSM8953 Pro Qualcomm Snapdragon 626 Super AMOLED' },
+     { id: 146, name: 'Samsung Z4', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 Spreadtrum SC9830A", tela: "LCD", avatar: 'https://t2.tudocdn.net/241286?w=158&h=304', spec:'8GB 1GB Cortex-A7 Spreadtrum SC9830A LCD' },
+     { id: 147, name: 'Samsung Galaxy Note FE', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 8 Octa 8890", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/273631?w=146&h=304', spec:'64GB 4GB SAMSUNG Exynos 8 Octa 8890 Super AMOLED' },
+     { id: 148, name: 'Samsung Galaxy J7 Max', armazenamento: "32GB", ram: '4GB', processador: "Helio P20 MediaTek MT6757", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/270912?w=154&h=304', spec:'32GB 4GB Helio P20 MediaTek MT6757 PLS TFT' },
+     { id: 149, name: 'Samsung Galaxy J7 2017', armazenamento: "16GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/269313?w=151&h=304', spec:'16GB 3GB Cortex-A53 SAMSUNG Exynos 7870 Octa Super AMOLED' },
+     { id: 150, name: 'Samsung Galaxy J5 2017', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/269330?w=151&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7870 Octa Super AMOLED' },
+     { id: 151, name: 'Samsung Galaxy J3 2017', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7570", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/316818?w=149&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7570 PLS TFT' },
+     { id: 152, name: 'Samsung Galaxy J7 Pro', armazenamento: "64GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/293903?w=151&h=304', spec:'64GB 3GB Cortex-A53 SAMSUNG Exynos 7870 Octa Super AMOLED' },
+     { id: 153, name: 'Samsung Galaxy A8 Plus 2018', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 7885", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/387684?w=144&h=304', spec:'64GB 4GB SAMSUNG Exynos 7 Octa 7885 Super AMOLED' },
+     { id: 154, name: 'Samsung Galaxy J2 Pro 2018', armazenamento: "16GB", ram: '1.5GB', processador: "Qualcomm Snapdragon 425 MSM8917", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/317236?w=153&h=304', spec:'16GB 1.5GB Qualcomm Snapdragon 425 MSM8917 Super AMOLED' },
+     { id: 155, name: 'Samsung Galaxy J7 Duo', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7884", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/332339?w=153&h=304', spec:'32GB 3GB SAMSUNG Exynos 7 Octa 7884 Super AMOLED' },//
+     { id: 156, name: 'Samsung Galaxy A6', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/333664?w=144&h=304', spec:'32GB 3GB Cortex-A53 SAMSUNG Exynos 7870 Octa Super AMOLED' },
+     { id: 157, name: 'Samsung Galaxy J4', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Quad 7570", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/336552?w=155&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7 Quad 7570 Super AMOLED' },
+     { id: 158, name: 'Samsung Galaxy J7 2018', armazenamento: "32GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/499902?w=151&h=304', spec:'32GB 2GB Cortex-A53 SAMSUNG Exynos 7870 Octa TFT LCD' },
+     { id: 159, name: 'Samsung Galaxy J3 2018', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7570", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/340765?w=149&h=304', spec:'16GB 2GB Cortex-A53 SAMSUNG Exynos 7570 IPS LCD' },
+     { id: 160, name: 'Samsung Galaxy J4 Plus', armazenamento: "32GB", ram: '2GB', processador: "Snapdragon 425 Qualcomm SDM425", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/355120?w=145&h=304', spec:'32GB 2GB Snapdragon 425 Qualcomm SDM425 IPS LCD' },
+     { id: 161, name: 'Samsung Galaxy A9', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 660 Qualcomm SDM660", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/358484?w=144&h=304', spec:'128GB 6GB Snapdragon 660 Qualcomm SDM660 Super AMOLED' },
+     { id: 162, name: 'Samsung Galaxy A6s', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 660 Qualcomm SDM660", tela: "PLS LCD", avatar: '   ', spec:'128GB 6GB Snapdragon 660 Qualcomm SDM660 PLS LCD' },
+     { id: 163, name: 'Samsung W2018', armazenamento: "64GB", ram: '6GB', processador: "Snapdragon 835 Qualcomm SDM835", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/363535?w=146&h=304', spec:'64GB 6GB Snapdragon 835 Qualcomm SDM835 Super AMOLED' },
+     { id: 164, name: 'Samsung W2019', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 845 Qualcomm SDM845", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/363568?w=145&h=304', spec:'128GB 6GB Snapdragon 845 Qualcomm SDM845 Super AMOLED' },
+     { id: 165, name: 'Samsung Galaxy A8s', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 710 Qualcomm SDM710", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/381477?w=144&h=304', spec:'128GB 6GB Snapdragon 710 Qualcomm SDM710 TFT LCD' },
+     { id: 166, name: 'Samsung Galaxy M10', armazenamento: "32GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7870 Octa", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/391062?w=148&h=304', spec:'32GB 3GB Cortex-A53 SAMSUNG Exynos 7870 Octa PLS TFT' },
+     { id: 167, name: 'Samsung Galaxy M20', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 7904", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/384333?w=145&h=304', spec:'64GB 4GB SAMSUNG Exynos 7 Octa 7904 PLS TFT' },
+     { id: 168, name: 'Samsung Galaxy M30', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 7904", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/392166?w=144&h=304', spec:'64GB 4GB SAMSUNG Exynos 7 Octa 7904 Super AMOLED' },
+     { id: 169, name: 'Samsung Galaxy A9 Pro', armazenamento: "32GB", ram: '4GB', processador: "MSM8976 Qualcomm Snapdragon 652", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/375387?w=154&h=304', spec:'32GB 4GB MSM8976 Qualcomm Snapdragon 652 Super AMOLED' },
+     { id: 170, name: 'Samsung Galaxy Fold', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 855 Qualcomm SDM855", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/520025?w=160&h=218', spec:'512GB 12GB Snapdragon 855 Qualcomm SDM855 Dynamic AMOLED' },
+     { id: 171, name: 'Samsung Galaxy S10 5G', armazenamento: "256GB", ram: '8GB', processador: "Snapdragon 855 Qualcomm SDM855", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/379796?w=144&h=304', spec:'256GB 8GB Snapdragon 855 Qualcomm SDM855 Dynamic AMOLED' },
+     { id: 172, name: 'Samsung Galaxy A50', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 7 Octa 9610", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/380993?w=143&h=304', spec:'64GB 4GB SAMSUNG Exynos 7 Octa 9610 Super AMOLED' },//
+     { id: 173, name: 'Samsung Galaxy A20', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7884", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/394784?w=143&h=304', spec:'32GB 3GB SAMSUNG Exynos 7 Octa 7884 Super AMOLED' },//
+     { id: 174, name: 'Samsung Galaxy A70', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 675 Qualcomm SDM675", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/384877?w=142&h=304', spec:'128GB 6GB Snapdragon 675 Qualcomm SDM675 Super AMOLED' },
+     { id: 175, name: 'Samsung Galaxy A80', armazenamento: "128GB", ram: '8GB', processador: "Snapdragon 730G Qualcomm SDM730G", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/387290?w=141&h=304', spec:'128GB 8GB Snapdragon 730G Qualcomm SDM730G Super AMOLED' },
+     { id: 176, name: 'Samsung Galaxy Xcover 4s', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7885", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/398037?w=152&h=304', spec:'32GB 3GB SAMSUNG Exynos 7 Octa 7885 IPS LCD' },
+     { id: 177, name: 'Samsung Galaxy Note 10 Plus', armazenamento: "512GB", ram: '12GB', processador: "SAMSUNG Exynos 9825", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/403898?w=145&h=304', spec:'512GB 12GB SAMSUNG Exynos 9825 Dynamic AMOLED' },
+     { id: 178, name: 'Samsung Galaxy A10e', armazenamento: "32GB", ram: '2GB', processador: "SAMSUNG Exynos 7 Octa 7884B", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/401121?w=143&h=304', spec:'32GB 2GB SAMSUNG Exynos 7 Octa 7884B TFT LCD' },
+     { id: 179, name: 'Samsung Galaxy A50s', armazenamento: "128GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/474028?w=143&h=304', spec:'128GB 4GB SAMSUNG Exynos 9611 Super AMOLED' },
+     { id: 180, name: 'Samsung Galaxy Note 10 Plus 5G', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 855 Qualcomm SDM855", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/404059?w=145&h=304', spec:'512GB 12GB Snapdragon 855 Qualcomm SDM855 Dynamic AMOLED' },
+     { id: 181, name: 'Samsung Galaxy M10s', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7 Octa 7884B", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/494281?w=143&h=304', spec:'32GB 3GB SAMSUNG Exynos 7 Octa 7884B Super AMOLED' },
+     { id: 182, name: 'Samsung Galaxy M30s', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/494275?w=144&h=304', spec:'64GB 4GB SAMSUNG Exynos 9611 Super AMOLED' },
+     { id: 183, name: 'Samsung Galaxy A70s', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 675 Qualcomm SDM675", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/496167?w=142&h=304', spec:'128GB 6GB Snapdragon 675 Qualcomm SDM675 Super AMOLED' },
+     { id: 184, name: 'Samsung Galaxy Fold 5G', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 855 Plus Qualcomm SDM855", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/504862?w=160&h=218', spec:'512GB 12GB Snapdragon 855 Plus Qualcomm SDM855 Dynamic AMOLED' },
+     { id: 185, name: 'Samsung Galaxy S20 5G', armazenamento: "128GB", ram: '12GB', processador: "SAMSUNG Exynos 990", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/514119?w=138&h=304', spec:'128GB 12GB SAMSUNG Exynos 990 Dynamic AMOLED' },
+     { id: 186, name: 'Samsung Galaxy M21', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/517769?w=144&h=304', spec:'64GB 4GB SAMSUNG Exynos 9611 Super AMOLED' },
+     { id: 187, name: 'Samsung Galaxy M11', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 450 Qualcomm SDM450", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/519287?w=145&h=304', spec:'32GB 3GB Snapdragon 450 Qualcomm SDM450 PLS TFT' },
+     { id: 188, name: 'Samsung Galaxy A71 5G', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 980", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/520670?w=141&h=304', spec:'128GB 6GB SAMSUNG Exynos 980 Super AMOLED' },
+     { id: 189, name: 'Samsung Galaxy A21', armazenamento: "32GB", ram: '3GB', processador: "Helio P35 MediaTek MT6765", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/594293?w=139&h=304', spec:'32GB 3GB Helio P35 MediaTek MT6765 TFT LCD' },
+     { id: 190, name: 'Samsung Galaxy A51 5G', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 980", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/520671?w=141&h=304', spec:'128GB 6GB SAMSUNG Exynos 980 Super AMOLED' },
+     { id: 191, name: 'Samsung Galaxy A Quantum', armazenamento: "128GB", ram: '8GB', processador: "SAMSUNG Exynos 980", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/524621?w=141&h=304', spec:'128GB 8GB SAMSUNG Exynos 980 Super AMOLED' },
+     { id: 192, name: 'Samsung Galaxy Z Flip 5G', armazenamento: "256GB", ram: '8GB', processador: "Snapdragon 865 Plus Qualcomm SM8250", tela: "Dynamic AMOLED", avatar: 'https://t2.tudocdn.net/533350?w=133&h=304', spec:'256GB 8GB Snapdragon 865 Plus Qualcomm SM8250 Dynamic AMOLED' },
+     { id: 193, name: 'Samsung Galaxy M01', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 439 Qualcomm SDM439", tela: "PLS TFT", avatar: 'https://t2.tudocdn.net/526753?w=146&h=304', spec:'32GB 3GB Snapdragon 439 Qualcomm SDM439 PLS TFT' },
+     { id: 194, name: 'Samsung Galaxy M01s', armazenamento: "32GB", ram: '3GB', processador: "Helio P22 MediaTek MT6762", tela: "PLS TFT LCD", avatar: 'https://t2.tudocdn.net/532594?w=147&h=304', spec:'32GB 3GB Helio P22 MediaTek MT6762 PLS TFT LCD' },
+     { id: 195, name: 'Samsung Galaxy M01 Core', armazenamento: "16GB", ram: '1GB', processador: "MediaTek MT6739", tela: "PLS TFT LCD", avatar: 'https://t2.tudocdn.net/533974?w=145&h=304', spec:'16GB 1GB MediaTek MT6739 PLS TFT LCD' },
+     { id: 196, name: 'Samsung Galaxy M31s', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/541186?w=142&h=304', spec:'128GB 6GB SAMSUNG Exynos 9611 Super AMOLED' },
+     { id: 197, name: 'Samsung Galaxy M31 Prime', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/544933?w=144&h=304', spec:'128GB 6GB SAMSUNG Exynos 9611 Super AMOLED' },
+     { id: 198, name: 'Samsung W21', armazenamento: "512GB", ram: '12GB', processador: "Snapdragon 865 Plus Qualcomm SM8250", tela: "Dynamic AMOLED 2X", avatar: 'https://t2.tudocdn.net/547435?w=160&h=199', spec:'512GB 12GB Snapdragon 865 Plus Qualcomm SM8250 Dynamic AMOLED 2X' },
+     { id: 199, name: 'Samsung Galaxy M02s', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 450 Qualcomm SDM450", tela: "PLS LCD", avatar: 'https://t2.tudocdn.net/558855?w=141&h=304', spec:'32GB 3GB Snapdragon 450 Qualcomm SDM450 PLS LCD' },
+     { id: 200, name: 'Samsung Galaxy XCover 5', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 850", tela: "PLS TFT LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 201, name: 'Samsung Galaxy Quantum 2', armazenamento: "128GB", ram: '6GB', processador: "Snapdragon 855 Plus Qualcomm SDM855", tela: "Dynamic AMOLED 2X", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 202, name: 'Samsung Galaxy F12', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 850", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 203, name: 'Samsung Galaxy F02s', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 450 Qualcomm SDM450", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 204, name: 'Samsung Galaxy F52 5G', armazenamento: "128GB", ram: '8GB', processador: "Snapdragon 750G Qualcomm SM7225", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 205, name: 'Samsung Galaxy F22', armazenamento: "128GB", ram: '4GB', processador: "Helio G80 MediaTek", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 206, name: 'Samsung Galaxy M21 2021', armazenamento: "64GB", ram: '4GB', processador: "SAMSUNG Exynos 9611", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 207, name: 'Samsung Galaxy A12 Nacho', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 850", tela: "PLS TFT LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 208, name: 'Samsung Galaxy M32 5G', armazenamento: "128GB", ram: '6GB', processador: "Dimensity 720 MediaTek MT6853", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 209, name: 'Samsung Galaxy A13 5G', armazenamento: "64GB", ram: '4GB', processador: "Dimensity 700 MediaTek MT6833", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 210, name: 'Samsung Galaxy M33', armazenamento: "128GB", ram: '6GB', processador: "SAMSUNG Exynos 1280", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 211, name: 'Samsung Galaxy M23', armazenamento: "128GB", ram: '4GB', processador: "Snapdragon 750G Qualcomm SM7225", tela: "TFT LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 212, name: 'Samsung Galaxy F23', armazenamento: "128GB", ram: '4GB', processador: "Snapdragon 750G Qualcomm SM7225", tela: "IPS LCD", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 213, name: 'Samsung Galaxy Quantum 3', armazenamento: "128GB", ram: '8GB', processador: "Dimensity 900 MediaTek MT6877", tela: "Super AMOLED Plus", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 214, name: 'Samsung Galaxy A7', armazenamento: "16GB", ram: '2GB', processador: "Qualcomm Snapdragon 615 MSM8939", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 215, name: 'Samsung Galaxy S6 edge', armazenamento: "64GB", ram: '3GB', processador: "SAMSUNG Exynos 7420", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 216, name: 'Samsung Galaxy S6', armazenamento: "32GB", ram: '3GB', processador: "SAMSUNG Exynos 7420", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 217, name: 'Samsung Galaxy J1 2016', armazenamento: "8GB", ram: '1GB', processador: "Cortex-A7 SAMSUNG Exynos 3 Quad 3475", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 218, name: 'Samsung Galaxy J7 Metal (2016)', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7870", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
+     { id: 219, name: 'Samsung Galaxy J5 Metal (2016)', armazenamento: "16GB", ram: '2GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916", tela: "Super AMOLED", avatar: 'https://t2.tudocdn.net/584719?w=148&h=304', spec:'64GB 4GB SAMSUNG Exynos 850 PLS TFT LCD' },
      { id: 220, name: 'Samsung Galaxy A7 2016', armazenamento: "16GB", ram: '3GB', processador: "Cortex-A53 SAMSUNG Exynos 7 Octa 7580", tela: "Super AMOLED" },
      { id: 221, name: 'Samsung Galaxy J5', armazenamento: "16GB", ram: '1.5GB', processador: "Cortex-A53 Qualcomm Snapdragon 410 MSM8916  ", tela: "Super AMOLED" },
      { id: 222, name: 'Samsung Galaxy J6 Plus', armazenamento: "32GB", ram: '3GB', processador: "Snapdragon 425 Qualcomm SDM425", tela: "IPS LCD" },
