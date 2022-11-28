@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Home, Login, Cadastro, Principal,Pesquisa, Filtrar, Noticia1, Noticia2} from './views';
+import {Home, Login, Cadastro, Principal, Filtrar, Noticia1, Noticia2, Noticia3, Noticia4, Noticia5} from './views';
 import {Test} from './views';
 
 
@@ -22,8 +22,16 @@ export default function App() {
           <Stack.Screen name="Login" options={{headerShown:false}} component={Login} />
           <Stack.Screen name="Cadastro" options={{headerShown:false}} component={Cadastro} />
           <Stack.Screen name="Principal" options={{headerShown:false}} component={Principal} />
-          <Stack.Screen name="Noticia1" options={{headerShown:true}} component={Noticia1} />
-          <Stack.Screen name="Noticia2" options={{headerShown:true}} component={Noticia2} />
+          <Stack.Screen name="Noticia1" options={{headerShown:true,
+            headerStyle:{backgroundColor:"#8c52ff"}}} component={Noticia1} />
+          <Stack.Screen name="Noticia2" options={{headerShown:true,
+            headerStyle:{backgroundColor:"#8c52ff"}}} component={Noticia2} />
+          <Stack.Screen name="Noticia3" options={{headerShown:true,
+            headerStyle:{backgroundColor:"#8c52ff"}}} component={Noticia3} />
+          <Stack.Screen name="Noticia4" options={{headerShown:true,
+            headerStyle:{backgroundColor:"#8c52ff"}}} component={Noticia4} />
+          <Stack.Screen name="Noticia5" options={{headerShown:true,
+            headerStyle:{backgroundColor:"#8c52ff"}}} component={Noticia5} />
           <Stack.Screen name="Filtrar" options={{headerShown:true,
             headerStyle:{backgroundColor:"#8c52ff"}}} component={Filtrar} />
         </Stack.Navigator>

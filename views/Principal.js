@@ -44,8 +44,16 @@ export default function Principal({navigation}){
                     <Image source={require('../assets/noticia11.png')}></Image>
                 </TouchableOpacity>
                 <View><Text style={{color: 'white'}}></Text></View>
-                <TouchableOpacity style={{marginTop: 0,marginBottom: 0, alignSelf: 'center'}} onPress={()=>navigation.navigate('Noticia2')}>
-                    <Image source={require('../assets/noticia3.png')}></Image>
+                <TouchableOpacity style={{marginTop: 0,marginBottom: 0, alignSelf: 'center'}} onPress={()=>navigation.navigate('Noticia3')}>
+                    <Image source={require('../assets/noticia4.png')}></Image>
+                </TouchableOpacity>
+                <View><Text style={{color: 'white'}}></Text></View>
+                <TouchableOpacity style={{marginTop: 0,marginBottom: 0, alignSelf: 'center'}} onPress={()=>navigation.navigate('Noticia4')}>
+                    <Image source={require('../assets/noticia5.png')}></Image>
+                </TouchableOpacity>
+                <View><Text style={{color: 'white'}}></Text></View>
+                <TouchableOpacity style={{marginTop: 0,marginBottom: 0, alignSelf: 'center'}} onPress={()=>navigation.navigate('Noticia5')}>
+                    <Image source={require('../assets/noticia6.png')}></Image>
                 </TouchableOpacity>
             </ScrollView>
        </View>
