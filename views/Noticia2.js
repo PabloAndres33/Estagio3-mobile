@@ -27,7 +27,7 @@ export default function Noticia2({navigation}) {
             ))
         }
         </ScrollView>
-        <Text style={{marginBottom: 290, color: 'white'}}> A Samsung liberou recentemente a versão beta da interface One UI 5 baseada no Android 13 para alguns de seus smartphones avançados, incluindo dobráveis como o Galaxy Z Flip3 e Galaxy Z Fold3. Esse sistema vem com melhorias no desempenho, novos recursos e correção de bugs reportados pela comunidade, mas ainda com disponibilidade limitada.
+        <Text style={{marginBottom: 290, color: 'white', width: 400}}> A Samsung liberou recentemente a versão beta da interface One UI 5 baseada no Android 13 para alguns de seus smartphones avançados, incluindo dobráveis como o Galaxy Z Flip3 e Galaxy Z Fold3. Esse sistema vem com melhorias no desempenho, novos recursos e correção de bugs reportados pela comunidade, mas ainda com disponibilidade limitada.
 
 De acordo com vazamentos, a desenvolvedora está trabalhando para lançar em breve o software para o Galaxy S21 FE, celular intermediário anunciado no 1º trimestre de 2022 pela sul-coreana com a plataforma Exynos 2100 e foco em custo-benefício, sendo o último modelo da linha Fan Edition lançado pela empresa asiática.</Text>
     </View>

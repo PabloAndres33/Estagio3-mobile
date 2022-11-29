@@ -26,7 +26,7 @@ export default function Noticia1({navigation}) {
                 ))
             }
             </ScrollView>
-            <Text style={{marginBottom: 300, color: 'white'}}>  A Sharp anunciou um novo celular básico que promete     entregar um bom conjunto por preço acessível. O Rouvo V é o primeiro modelo da categoria lançado desde o AQUOS Wish, que trazia uma boa combinação de desempenho e resistência física, e agora será uma nova opção de entrada para os consumidores dos Estados Unidos.
+            <Text style={{marginBottom: 300, color: 'white', width: 400}}>  A Sharp anunciou um novo celular básico que promete     entregar um bom conjunto por preço acessível. O Rouvo V é o primeiro modelo da categoria lançado desde o AQUOS Wish, que trazia uma boa combinação de desempenho e resistência física, e agora será uma nova opção de entrada para os consumidores dos Estados Unidos.
 
 O Rouvo V possui uma tela TFT LCD de 6,5 polegadas com resolução HD+ (720 x 1.600 pixels) distribuída na proporção de 20:9 e taxa de atualização de 60 Hz. O display possui bordas espessas e um entalhe em formato de gota que abriga sua câmera frontal de 5 MP.</Text>
         </View>

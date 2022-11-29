@@ -26,7 +26,7 @@ export default function Noticia5({navigation}) {
                 ))
             }
             </ScrollView>
-            <Text style={{marginBottom: 300, color: 'white'}}>  O novo Huawei Mate X3 também tende a ser mais fino e leve, já que a Huawei ouviu o feedback do público sobre os modelos anteriores e resolveu agir.
+            <Text style={{marginBottom: 400, color: 'white', width: 400}}>  O novo Huawei Mate X3 também tende a ser mais fino e leve, já que a Huawei ouviu o feedback do público sobre os modelos anteriores e resolveu agir.
 
 Quanto ao processador do novo dobrável, há quem acredite que ele terá o chipset Snapdragon 8 Gen 2. No entanto, como de costume, o SoC não trabalhará com modem 5G, uma vez que a Huawei continua na lista de sanções dos Estados Unidos.</Text>
         </View>

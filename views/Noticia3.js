@@ -26,7 +26,7 @@ export default function Noticia3({navigation}) {
                 ))
             }
             </ScrollView>
-            <Text style={{marginBottom: 300, color: 'white'}}>  Apesar do lançamento ainda distante, o conhecido Max Jambor revelou mais informações sobre o modelo OnePlus 11 5G. Em postagem compartilhada no Twitter, o vazador reafirmou que o aparelho será lançado na cor preta e com acabamento fosco.
+            <Text style={{marginBottom: 300, color: 'white', width: 400}}>  Apesar do lançamento ainda distante, o conhecido Max Jambor revelou mais informações sobre o modelo OnePlus 11 5G. Em postagem compartilhada no Twitter, o vazador reafirmou que o aparelho será lançado na cor preta e com acabamento fosco.
 
 Por outro lado, a segunda opção será na cor verde, mas a textura será brilhante e chamativa. Quanto ao smartphone em si, Jambor diz que ele deve sair da caixa com processador Snapdragon 8 Gen 2 e tela AMOLED de 6,7 polegadas que suporta taxa de 120 Hz.
 Outras fontes afirmam que o OnePlus 11 deve ter construção em cerâmica na traseira e estrutura de metal, enquanto que a câmera principal pode ser de 50 MP e está acompanhada de lente ultrawide de 48 MP e telefoto de 32 MP.

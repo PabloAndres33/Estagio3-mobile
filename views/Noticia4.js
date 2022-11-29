@@ -26,7 +26,7 @@ export default function Noticia4({navigation}) {
                 ))
             }
             </ScrollView>
-            <Text style={{marginBottom: 300, color: 'white'}}>  O Oukitel WP21 é o smartphone robusto com a melhor ficha técnica de 2022. Isso porque ele traz processador MediaTek Helio G99 de 6 nm e display com taxa de atualização de 120 Hz. Ou seja, um conjunto super atual para quem deseja até mesmo jogar games como League of Legends e Alto's Odyssey.
+            <Text style={{marginBottom: 300, color: 'white', width: 400}}>  O Oukitel WP21 é o smartphone robusto com a melhor ficha técnica de 2022. Isso porque ele traz processador MediaTek Helio G99 de 6 nm e display com taxa de atualização de 120 Hz. Ou seja, um conjunto super atual para quem deseja até mesmo jogar games como League of Legends e Alto's Odyssey.
 
 Além disso, esse smartphone também traz câmera principal de 64 MP, sensor Sony de 20 MP para visão noturna e macro de 2 MP que garantem um ótimo conjunto para fotos em todos os ambientes.
 
